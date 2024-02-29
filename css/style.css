@@ -1,0 +1,442 @@
+
+
+@font-face {
+    font-family: 'HindSiliguri-Bold';
+    src: url('./font/HindSiliguri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindSiliguri-Light';
+    src: url('./font/HindSiliguri-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindSiliguri-Medium';
+    src: url('./font/HindSiliguri-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindSiliguri-Regular';
+    src: url('./font/HindSiliguri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindSiliguri-SemiBold';
+    src: url('./font/HindSiliguri-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "HindSiliguri-Regular";
+}
+.bg-dark-blue {
+    background-color: #081736;
+}
+/* .main-banner{
+    background-image: url(./img/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+.main-banner .banner-item{
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    margin-top: 10rem;
+}
+.main-banner .banner-item .heading{
+    color: #fff;
+    font-size: 3.5rem;
+    /* font-weight: 800; */
+    text-shadow: 2px 2px 6px black;
+}
+.main-banner .banner-item .heading span{
+    font-size: 5rem;
+}
+/* main-banner and footer section download button start */
+.main-banner .banner-item .main-cta, .footer-top-section .main-cta {
+    background: #c89b42;
+    width: 23%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 50px;
+}
+.main-banner .banner-item .main-cta {
+    margin-top: 45%;
+}
+/* main-banner and footer section download button end */
+
+.app-feature .feature-heading {
+    height: 30vh;
+    padding-top: 60px;
+    margin-top: -80px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 1px 0px 17px 6px #0000002b;
+}
+.app-feature .feature-heading h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffb22f;
+}
+.app-feature .feature-heading p{
+    color: #243948;
+    font-size: 18px;
+    font-weight: 400;
+}
+.app-feature .feature-item-box {
+    text-align: center;
+    margin-top: -10rem;
+}
+/* .app-feature .feature-item-box .feature-item{
+}
+*/
+.app-feature .feature-item-box .feature-item{
+    padding: 6rem;
+}
+.app-feature .feature-item-box .feature-item img{
+    width: 50%;
+    border: none;
+    background: #0000;
+    padding-bottom: 2rem;
+}
+.app-feature .feature-item-box .feature-item h6{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffb22f;
+}
+.app-feature .feature-item-box .feature-item p{
+    color: #243948;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* news-section start */
+
+.news-section {
+    margin: 2%;
+    text-align: center;
+}
+
+.news-title {
+    margin-bottom: 1.5rem !important;
+    font-size: xxx-large;
+}
+
+.news_branchen .card {
+    margin-bottom: 25px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.news_branchen .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.news_branchen .card:hover .card__shadow--1 {
+    background: rgba(0, 0, 0, 0.1);
+}
+.news_branchen .card .image__wrapper {
+    position: relative;
+}
+.news_branchen .card .card__shadow--1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 100%;
+    height: 100%;
+}
+.news_branchen .card a {
+    color: #1c1c1c;
+}
+.news_branchen .card a:hover {
+    color: #212121;
+    text-decoration: none;
+}
+.news_branchen .card a {
+    text-decoration: none;
+}
+.news_branchen .card a p {
+    font-size: 18px;
+    color: #232323;
+}
+.news_branchen .card img {
+    width: 100%;
+}
+/* news section end */
+
+/* in footer call-section start */
+.footer-top-section .call-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-top-section .call-section .cbtn {
+    background-color: #001440;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    min-width: 150px;
+    min-height: 50px;
+}
+.footer-top-section .call-section .cbtn-icon-wrapper {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #996600;
+    position: relative;
+    z-index: 1;
+}
+.footer-top-section .call-section .cbtn-icon-wrapper i {
+    font-size: 16px;
+}
+.footer-top-section .call-section .cbtn-icon-wrapper::after {
+    content: "";
+    position: absolute;
+    background-color: #996600;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    right: -4px;
+    margin: auto;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.footer-top-section .call-section .cbtn-label {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.footer-top-section .call-section .cbtn.reverse .cbtn-icon-wrapper::before {
+    content: "";
+    position: absolute;
+    background-color: #996600;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    left: -4px;
+    margin: auto;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+
+
+
+
+.footer-top-section img {
+    width: auto;
+    height: 100%;
+    background-color: #081736;
+    border: none;
+}
+
+.footer-top-section .call-section .dbtn {
+    background-color: #001440;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    min-width: 110px;
+    min-height: 50px;
+}
+
+.footer-bottom-section {
+    background-color: #081736;
+}
+
+.footer-bottom-section .app-link a img {
+    height: 60px;
+}
+
+.footer-bottom-section .social .logo img {
+    height: 60px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* .main-banner{
+        background-image: url(./img/bannerm2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 48vh;
+    } */
+    .main-banner .banner-item{
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        margin-top: 1rem;
+    }
+    .main-banner .banner-item .heading{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-shadow: 2px 2px 6px black;
+   }
+    .main-banner .banner-item .heading span{
+        font-size: 1rem;
+   }
+    .app-feature .feature-heading h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffb22f;
+   }
+    .app-feature .feature-heading p {
+        color: #243948;
+        font-size: 12px;
+        font-weight: 400;
+   }
+    .app-feature .feature-heading {
+        height: 30vh;
+        padding-top: 50px;
+        margin-top: -20px;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: 1px 0px 17px 6px #0000002b;
+   }
+
+   /* main-banner and footer section download button start */
+    .main-banner .banner-item .main-cta, .footer-top-section .main-cta {
+        background: #c89b42;
+        width: 40%;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #fff;
+        padding: 10px 5px;
+        border: none;
+        border-radius: 50px;
+        margin-top: 70%;
+   }
+    .footer-top-section .main-cta{
+        margin-top: 0px;
+   }
+   /* main-banner and footer section download button end */
+
+    
+    .main-banner .banner-item .heading{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-shadow: 2px 2px 6px black;
+   }
+    .app-feature .feature-heading {
+        border-radius: 10px;
+        padding-top: 15px;
+        height: 210px;
+        box-shadow: 1px 0px 17px 6px #0000002b;
+        background: #fff;
+    }
+    .app-feature .feature-heading h2 {
+        font-size: 0.8rem;
+   }
+    .app-feature .feature-heading p {
+        padding: 0px 13px;
+   }
+    .app-feature .feature-item-box .feature-item {
+        padding: 1rem;
+   }
+    .app-feature .feature-item-box{
+        margin-top: -3rem;
+   }
+    .app-feature .feature-item-box .feature-item img {
+       /* width: 50px;
+        */
+       /* height: 50px;
+        */
+        width: 80px;
+   }
+    .app-feature .feature-item-box .feature-item h6 {
+        font-size: 0.8rem;
+   }
+    .app-feature .feature-item-box .feature-item p {
+        font-size: 0.6rem;
+        text-align: center;
+   }
+   /* news section start  */
+   .news-title {
+        margin-bottom: 1.0rem !important;
+        font-size: large;
+    }
+   .news_branchen .card a p {
+        font-size: 8px;
+    }
+    
+
+   
+     .footer-top-section .call-section .cbtn {
+        min-width: 90px;
+        min-height: 30px;
+    }
+    
+    .footer-top-section .call-section .cbtn-icon-wrapper {
+        width: 30px;
+    }
+
+    
+    .footer-top-section .call-section .dbtn {
+        min-width: 110px;
+        min-height: 30px;
+    
+    } 
+
+    .footer-bottom-section .useful-link{
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom-section .app-link a img {
+        height: 30px;
+    }
+
+
+    .footer-bottom-section .social .logo img {
+        height: 30px;
+    }
+}
