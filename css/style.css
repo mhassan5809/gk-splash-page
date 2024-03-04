@@ -69,7 +69,8 @@
     font-size: 5rem;
 }
 /* main-banner and footer section download button start */
-.main-banner .banner-item .main-cta, .footer-top-section .main-cta {
+/* .main-banner .banner-item .main-cta, */
+.app-feature .main-cta, .footer-top-section .main-cta {
     background: #c89b42;
     width: 23%;
     font-size: 2rem;
@@ -79,9 +80,9 @@
     border: none;
     border-radius: 50px;
 }
-.main-banner .banner-item .main-cta {
+/* .main-banner .banner-item .main-cta {
     margin-top: 45%;
-}
+} */
 /* main-banner and footer section download button end */
 
 .app-feature .feature-heading {
@@ -344,7 +345,8 @@
    }
 
    /* main-banner and footer section download button start */
-    .main-banner .banner-item .main-cta, .footer-top-section .main-cta {
+    /* .main-banner .banner-item .main-cta,  */
+    .app-feature .main-cta, .footer-top-section .main-cta {
         background: #c89b42;
         width: 40%;
         font-size: 0.7rem;
@@ -353,11 +355,14 @@
         padding: 10px 5px;
         border: none;
         border-radius: 50px;
-        margin-top: 70%;
    }
-    .footer-top-section .main-cta{
+   .app-feature .main-cta {
+        font-size: 1rem;
+        padding: 10px 15px;
+   }
+    /* .footer-top-section .main-cta{
         margin-top: 0px;
-   }
+   } */
    /* main-banner and footer section download button end */
 
     
