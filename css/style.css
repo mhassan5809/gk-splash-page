@@ -355,18 +355,18 @@
     .app-feature .main-cta, .footer-top-section .main-cta {
         background: #c89b42;
         width: 40%;
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #fff;
-        padding: 10px 5px;
+        padding: 10px 15px;
         border: none;
         border-radius: 50px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
    }
-   .app-feature .main-cta {
+   /* .app-feature .main-cta {
         font-size: 1rem;
         padding: 10px 15px;
-   }
+   } */
     /* .footer-top-section .main-cta{
         margin-top: 0px;
    } */
@@ -424,7 +424,7 @@
 
    
      .footer-top-section .call-section .cbtn {
-        min-width: 90px;
+        min-width: 80px;
         min-height: 30px;
     }
     
