@@ -130,6 +130,10 @@
     font-weight: 400;
 }
 
+.promo-section {
+    margin-top: 50px !important;
+}
+
 /* news-section start */
 
 .news-section {
@@ -299,6 +303,7 @@
 .footer-bottom-section .social .logo img {
     height: 60px;
 }
+
 
 
 
