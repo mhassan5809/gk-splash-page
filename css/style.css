@@ -69,7 +69,7 @@
     font-size: 5rem;
 }
 /* main-banner and footer section download button start */
-/* .main-banner .banner-item .main-cta, */
+.main-banner .banner-item .main-cta,
 .app-feature .main-cta, .footer-top-section .main-cta {
     background: #c89b42;
     width: 23%;
@@ -84,9 +84,9 @@
 .btn-mb {
     margin-bottom: 100px;
 }
-/* .main-banner .banner-item .main-cta {
+.main-banner .banner-item .main-cta {
     margin-top: 45%;
-} */
+}
 /* main-banner and footer section download button end */
 
 .app-feature .feature-heading {
@@ -357,7 +357,7 @@
    }
 
    /* main-banner and footer section download button start */
-    /* .main-banner .banner-item .main-cta,  */
+    .main-banner .banner-item .main-cta, 
     .app-feature .main-cta, .footer-top-section .main-cta {
         background: #c89b42;
         width: 40%;
