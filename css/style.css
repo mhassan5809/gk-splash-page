@@ -71,6 +71,7 @@
 /* main-banner and footer section download button start */
 .main-banner .banner-item .main-cta,
 .app-feature .main-cta, .footer-top-section .main-cta {
+    position: relative;
     background: #c89b42;
     width: 23%;
     font-size: 1.5rem;
@@ -85,13 +86,13 @@
     margin-bottom: 100px;
 }
 .main-banner .banner-item .main-cta {
-    margin-top: 45%;
+    margin-top: 47%;
 }
 /* main-banner and footer section download button end */
 
 .app-feature .feature-heading {
-    height: 30vh;
-    padding-top: 25px;
+    height: 35vh;
+    padding-top: 65px;
     margin-top: -80px;
     background: #fff;
     border-radius: 40px;
@@ -359,6 +360,7 @@
    /* main-banner and footer section download button start */
     .main-banner .banner-item .main-cta, 
     .app-feature .main-cta, .footer-top-section .main-cta {
+        margin-top: 328px;
         background: #c89b42;
         width: 40%;
         font-size: 1rem;
@@ -387,8 +389,8 @@
    }
     .app-feature .feature-heading {
         border-radius: 10px;
-        padding-top: 15px;
-        height: 210px;
+        padding-top: 45px;
+        height: 240px;
         box-shadow: 1px 0px 17px 6px #0000002b;
         background: #fff;
     }
