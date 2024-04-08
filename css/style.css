@@ -359,7 +359,7 @@
    }
 
    /* main-banner and footer section download button start */
-    .main-banner .banner-item .main-cta, 
+    /* .main-banner .banner-item .main-cta,  */
     .app-feature .main-cta, .footer-top-section .main-cta {
         /* margin-top: 328px; */
         
@@ -376,7 +376,7 @@
 
    .app-feature .main-cta {
         position: relative;
-        top: -15%;
+        top: -38px;
         right: 0;
     }
    /* .app-feature .main-cta {
