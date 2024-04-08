@@ -86,7 +86,8 @@
     margin-bottom: 100px;
 }
 .main-banner .banner-item .main-cta {
-    margin-top: 47%;
+    /* margin-top: 47%; */
+    margin-top:  51%
 }
 /* main-banner and footer section download button end */
 
@@ -360,7 +361,8 @@
    /* main-banner and footer section download button start */
     .main-banner .banner-item .main-cta, 
     .app-feature .main-cta, .footer-top-section .main-cta {
-        margin-top: 328px;
+        /* margin-top: 328px; */
+        margin-top:  75%;
         background: #c89b42;
         width: 40%;
         font-size: 1rem;
