@@ -362,7 +362,7 @@
     .main-banner .banner-item .main-cta, 
     .app-feature .main-cta, .footer-top-section .main-cta {
         /* margin-top: 328px; */
-        margin-top:  75%;
+        
         background: #c89b42;
         width: 40%;
         font-size: 1rem;
@@ -373,6 +373,9 @@
         border-radius: 50px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
    }
+    .main-banner .banner-item .main-cta {
+        margin-top:  75%;
+    }
    /* .app-feature .main-cta {
         font-size: 1rem;
         padding: 10px 15px;
