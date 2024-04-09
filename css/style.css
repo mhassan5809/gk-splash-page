@@ -84,7 +84,7 @@
 .btn-mb {
     margin-bottom: 100px;
 }
-.app-feature .main-cta {
+.app-feature .main-cta-dnld {
     position: relative;
     top: -45px;
     right: 0;
@@ -376,7 +376,7 @@
 
    .app-feature .main-cta-dnld {
         position: relative;
-        top: -38px;
+        top: -35px;
         right: 0;
     }
    /* .app-feature .main-cta {
