@@ -309,6 +309,16 @@
     height: 60px;
 }
 
+.app-download-section .download-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-download-section .download-buttons .download-button img {
+    height: 60px;
+    width: auto
+}
+
 .footer-bottom-section .social .logo img {
     height: 60px;
 }
