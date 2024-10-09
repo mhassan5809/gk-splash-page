@@ -22,6 +22,11 @@ body {
     background-color: var(--background-color);
 }
 
+.bengali-numeral {
+    font-weight: 700;
+    /* opacity: 0.55; */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -75,6 +80,7 @@ body {
 .section-title {
     color: var(--primary-color);
     font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     padding-left: 15px;
     border-left: 5px solid var(--secondary-color);
@@ -82,15 +88,6 @@ body {
     position: relative;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 15px;
-    width: calc(100% - 15px);
-    height: 2px;
-    background-color: var(--secondary-color);
-}
 
 .rule-list {
     list-style: none;
@@ -99,11 +96,50 @@ body {
 
 .rule-list li {
     margin-bottom: 1.5rem;
-    padding: 1rem 0.75rem 0.5rem 3rem;
+    padding: 1rem 0.75rem 1rem 3rem;
     position: relative;
     background-color: #f8f9fa;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.rules-list li::before {
+    content: '•';  
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Specific style for the last rule (timeline item) */
+.rules-list li:last-child {
+    content: '';
+    padding-left: 0;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+.rules-list li:last-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.rules-list li:nth-last-child(2) img{
+    height: 600px;
+    width: 540px;
+}
+
+.rules-list li:nth-last-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .rule-list li:hover {
@@ -111,7 +147,6 @@ body {
 }
 
 .prize-list li::before,
-.rules-list li::before,
 .conditions-list li::before {
     position: absolute;
     left: 1rem;
@@ -119,8 +154,41 @@ body {
     font-size: 1.2rem;
 }
 
+.prize-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.prize-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.prize-list li {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+.rules-list li,
+.conditions-list li {
+    padding-left: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
 .prize-list li::before {
-    content: '🏆';
+    content: '';
+    background-image: url(/img/star-medal.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .rules-list li::before,
@@ -181,10 +249,10 @@ body {
     transform: scale(1.05);
 }
 
-.timeline::before {
+/* .timeline::before {
     content: '⏱️';
     margin-right: 8px;
-}
+} */
 
 .timeline-date-1,
 .timeline-date-2 {
@@ -315,6 +383,11 @@ body {
         font-size: 0.8rem;
         font-weight: 400
     }
+
+    .rules-list li:nth-last-child(2) img{
+        height: 400px;
+        width: 360px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -326,8 +399,44 @@ body {
         font-size: 1.5rem;
     }
 
-    .rule-list li {
+    /* .rule-list li {
         padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+    } */
+
+    .prize-list li::before {
+        content: '';
+        background-image: url(/img/star-medal.png);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .prize-list li:nth-last-child(2)::before {
+        position: absolute;
+        left: 0.8rem;
+        top: 2rem;
+        font-size: 1.2rem;
+        color: var(--primary-color); 
+    }
+
+    .prize-list li::before {
+        content: '';
+        background-image: url(/img/star-medal.png);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+        top: 48%;
+        transform: translateY(-50%);
     }
 
     .timeline {
@@ -345,5 +454,10 @@ body {
         color: var(--subtitle-text);
         font-size: 0.7rem;
         font-weight: 300
+    }
+
+    .rules-list li:nth-last-child(2) img{
+        height: 300px;
+        width: 270px;
     }
 }
