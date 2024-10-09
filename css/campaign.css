@@ -403,7 +403,7 @@ body {
         padding: 0.8rem 0.8rem 0.8rem 2.2rem;
     } */
 
-    .prize-list li::before {
+    /* .prize-list li::before {
         content: '';
         background-image: url(/img/star-medal.png);
         background-size: 20px 20px;
@@ -415,9 +415,9 @@ body {
         left: 10px;
         top: 50%;
         transform: translateY(-50%);
-    }
+    } */
 
-    .prize-list li:nth-last-child(2)::before {
+    .prize-list li:last-child::before {
         position: absolute;
         left: 0.8rem;
         top: 2rem;
