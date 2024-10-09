@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #0f1c3f; /* Deep navy blue */
-    --secondary-color: #d4af37; /* Slightly lighter gold */
-    --accent-color: #ffd700; /* Brighter gold for accents */
+    --primary-color: #0f1c3f;
+    --secondary-color: #d4af37;
+    --accent-color: #ffd700;
     --background-color: #f0f2f8;
     --text-color: #333;
     --light-text: #ffffff;
+    --subtitle-text: #9b9797;
     --box-shadow: 0 4px 6px rgba(15, 28, 63, 0.15);
 }
 
@@ -15,8 +16,8 @@
 }
 
 body {
-    /* font-family: 'Noto Sans Bengali', Arial, sans-serif;
-    line-height: 1.6; */
+    font-family: 'Noto Sans Bengali', Arial, sans-serif;
+    line-height: 1.8;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -27,112 +28,118 @@ body {
     padding: 0 20px;
 }
 
-/* Banner Styles */
 .banner {
     position: relative;
-    margin: 0 auto;
+    margin: 1rem 0;
     max-width: 1200px;
-    height: 500px;
+    height: auto;
     overflow: hidden;
-    margin-bottom: 3rem;
     border-radius: 15px;
     box-shadow: var(--box-shadow);
 }
 
 .banner-image {
-    height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 .banner-title {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    padding: 2rem;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-.main-title {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    text-align: left;
-    font-weight: 600;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  */
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .banner-subtitle {
+    color: var(--subtitle-text);
     font-size: 1rem;
-    color: rgb(54, 52, 52);
-    text-align: left;
-    max-width: 800px;
-    margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 400
 }
 
-/* Content Section Styles */
 .content-section {
     background-color: white;
     border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--box-shadow);
-    border: 2px solid var(--secondary-color);
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .section-title {
     color: var(--primary-color);
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     padding-left: 15px;
     border-left: 5px solid var(--secondary-color);
+    display: inline-block;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+    width: calc(100% - 15px);
+    height: 2px;
+    background-color: var(--secondary-color);
 }
 
 .rule-list {
     list-style: none;
+    padding-left: 0;
 }
 
 .rule-list li {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0.75rem 0.5rem 3rem;
     position: relative;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-/* Different icons for different sections */
+.rule-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.prize-list li::before,
+.rules-list li::before,
+.conditions-list li::before {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+}
+
 .prize-list li::before {
     content: '🏆';
-    position: absolute;
-    left: 0;
 }
 
-.rules-list li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-}
-
+.rules-list li::before,
 .conditions-list li::before {
-    content: '⚖️';
-    position: absolute;
-    left: 0;
+    content: '•';
 }
 
-/* Hashtag styling */
 .hashtag {
     color: var(--primary-color);
     background-color: var(--accent-color);
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 500;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.hashtag:hover {
+    transform: scale(1.05);
 }
 
 .social-platform {
@@ -141,10 +148,16 @@ body {
     background: linear-gradient(to bottom, transparent 50%, var(--secondary-color) 50%);
     background-size: 100% 200%;
     background-position: 0 10%;
-    padding: 0px;
+    padding: 0 4px;
     margin: 0 2px;
     border-radius: 3px;
-    transition: background-position 0.2s;
+    transition: background-position 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.social-platform-gen {
+    color: black;
+    font-weight: 600;
 }
 
 .social-platform:hover {
@@ -157,10 +170,15 @@ body {
     align-items: center;
     background-color: var(--primary-color);
     color: var(--light-text);
-    padding: 4px 12px;
+    padding: 6px 12px;
     border-radius: 20px;
     margin-left: 10px;
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+.timeline:hover {
+    transform: scale(1.05);
 }
 
 .timeline::before {
@@ -168,35 +186,29 @@ body {
     margin-right: 8px;
 }
 
-.timeline-date-1 {
-    color: var(--secondary-color);
-    font-weight: 600;
-    margin-right: 5px;
-}
+.timeline-date-1,
 .timeline-date-2 {
     color: var(--secondary-color);
     font-weight: 600;
-    margin-inline: 5px;
+    margin: 0 5px;
 }
 
-/* App Download Section */
 .app-download {
     text-align: center;
     margin-bottom: 2rem;
-
 }
 
 .download-image-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust this based on your needs */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .background-image {
     width: 100%;
     height: auto;
-    border-radius: 15px; /* If you want rounded corners */
+    border-radius: 15px;
 }
 
 .sticky-container {
@@ -207,22 +219,22 @@ body {
     display: flex;
     gap: 10px;
     z-index: 100;
-  }
-  
-  .sticky-button {
+}
+
+.sticky-button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Hide sticky buttons when footer is visible */
-  .footer-visible .sticky-container {
+}
+
+.footer-visible .sticky-container {
     display: none;
-  }
-  .download-buttons {
+}
+
+.download-buttons {
     position: absolute;
     bottom: 20%;
-    left:  68%;
+    left: 68%;
     transform: translateX(-50%);
     display: flex;
     gap: 1rem;
@@ -231,13 +243,9 @@ body {
 .download-button img {
     height: 60px;
 }
+
 .download-button-footer img {
     height: 30px;
-}
-
-.download-link {
-    display: flex;
-    flex-direction: column;
 }
 
 .download-button {
@@ -248,26 +256,94 @@ body {
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .content-section {
+        padding: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .rule-list li {
+        padding: 1rem 1rem 1rem 2.5rem;
+    }
+
+    .prize-list li::before,
+    .rules-list li::before,
+    .conditions-list li::before {
+        left: 0.7rem;
+        top: 0.9rem;
+    }
+
+    .download-buttons {
+        left: 70%;
+        bottom: 10%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .download-button img {
+        height: 30px;
+    }
     .banner {
-        height: 400px;
+       
+        margin: 1rem 0;
+        
+        height: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: var(--box-shadow);
     }
 
-    .main-title {
-        font-size: 2rem;
+    .banner-title {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
     }
-
+    
     .banner-subtitle {
-        font-size: 1.2rem;
+        color: var(--subtitle-text);
+        font-size: 0.8rem;
+        font-weight: 400
     }
+}
 
+@media (max-width: 480px) {
     .content-section {
         padding: 1.5rem;
     }
 
-    .download-buttons {
-        flex-direction: column;
-        align-items: center;
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .rule-list li {
+        padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+    }
+
+    .timeline {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .banner-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+    }
+    
+    .banner-subtitle {
+        color: var(--subtitle-text);
+        font-size: 0.7rem;
+        font-weight: 300
     }
 }
