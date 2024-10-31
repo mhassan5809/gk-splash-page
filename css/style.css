@@ -71,7 +71,7 @@
 /* main-banner and footer section download button start */
 /* .main-banner .banner-item .main-cta, */
 .app-feature .main-cta, .footer-top-section .main-cta {
-    background: #c89b42;
+    background: #e8bd59;
     width: 23%;
     font-size: 1.5rem;
     font-weight: 700;
@@ -94,7 +94,7 @@
 .app-feature .feature-heading {
     height: 35vh;
     padding-top: 35px;
-    margin-top: -80px;
+    margin-top: -50px;
     background: #fff;
     border-radius: 40px;
     box-shadow: 1px 0px 17px 6px #0000002b;
@@ -102,7 +102,7 @@
 .app-feature .feature-heading h2{
     font-size: 3rem;
     font-weight: 700;
-    color: #ffb22f;
+    color: #e8bd59;
 }
 .app-feature .feature-heading p{
     color: #243948;
@@ -129,7 +129,7 @@
 .app-feature .feature-item-box .feature-item h6{
     font-size: 2rem;
     font-weight: 700;
-    color: #ffb22f;
+    color: #e8bd59;
 }
 .app-feature .feature-item-box .feature-item p{
     color: #243948;
@@ -229,7 +229,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #996600;
+    background-color: #e8bd59;
     position: relative;
     z-index: 1;
 }
@@ -239,7 +239,7 @@
 .footer-top-section .call-section .cbtn-icon-wrapper::after {
     content: "";
     position: absolute;
-    background-color: #996600;
+    background-color: #e8bd59;
     width: 10px;
     height: 10px;
     top: 0;
@@ -260,7 +260,7 @@
 .footer-top-section .call-section .cbtn.reverse .cbtn-icon-wrapper::before {
     content: "";
     position: absolute;
-    background-color: #996600;
+    background-color: #e8bd59;
     width: 10px;
     height: 10px;
     top: 0;
@@ -271,9 +271,32 @@
     z-index: -1;
 }
 
+.media-card .card-text {
+    white-space: nowrap;    
+    overflow: hidden;         
+    text-overflow: ellipsis;  
+    display: block;
+    max-width: 100%;
+}
 
+.media-card .image__wrapper {
+    height: 100%;
+    overflow: hidden;
+}
 
+.media-card .media-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
 
+.news_branchen .card {
+    transition: transform 0.3s ease; 
+}
+
+.news_branchen .card:hover {
+    transform: scale(1.03);
+}
 
 .footer-top-section img {
     width: auto;
@@ -352,7 +375,7 @@
     .app-feature .feature-heading h2 {
         font-size: 1.5rem;
         font-weight: 700;
-        color: #ffb22f;
+        color: #e8bd59;
    }
     .app-feature .feature-heading p {
         color: #243948;
@@ -373,7 +396,7 @@
     .app-feature .main-cta, .footer-top-section .main-cta {
         /* margin-top: 328px; */
         
-        background: #c89b42;
+        background: #e8bd42;
         width: 40%;
         font-size: 1rem;
         font-weight: 700;
