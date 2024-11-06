@@ -69,6 +69,13 @@
     font-size: 5rem;
 }
 /* main-banner and footer section download button start */
+
+.app-feature {
+    position: relative;
+    z-index: 2; /* Positive z-index */
+}
+
+
 /* .main-banner .banner-item .main-cta, */
 .app-feature .main-cta, .footer-top-section .main-cta {
     background: #e8bd59;
@@ -99,6 +106,7 @@
     border-radius: 40px;
     box-shadow: 1px 0px 17px 6px #0000002b;
 }
+
 .app-feature .feature-heading h2{
     font-size: 3rem;
     font-weight: 700;
