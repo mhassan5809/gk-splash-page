@@ -66,7 +66,7 @@
 
 .slick-dots li button:before {
     content: '•';
-    font-size: 14px; /* Larger dot size */
+    font-size: 30px; /* Larger dot size */
     line-height: 15px;
     width: 15px;
     height: 15px;
@@ -77,8 +77,19 @@
 .slick-dots li.slick-active button:before {
     color: white;
     opacity: 1;
-    font-size: 16px; /* Slightly larger for active dot */
+    font-size: 40px; /* Slightly larger for active dot */
 }
+/* Custom dots styling */
+/* Inactive dots */
+.news_branchen .slick-dots li button:before {
+    color: #ccc !important; /* Set your inactive dot color here */
+}
+
+/* Active dot color */
+.news_branchen .slick-dots li.slick-active button:before {
+    color: #e8bd59 !important; /* Set active dot color to #e8bd59 */
+}
+
 
 /* Mobile and Tablet adjustments */
 @media only screen and (max-width: 1024px) {
@@ -113,40 +124,54 @@
 /* Additional adjustment for smaller mobile screens */
 @media only screen and (max-width: 600px) {
     .slick-dots-container {
-        bottom: 40px; /* Move even closer on smaller screens */
+        bottom: 40px;
     }
 }
 
-.news_branchen .slick-prev,
-.news_branchen .slick-next {
-    display: none !important;
-}
-
-
-.news_branchen .slick-list {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.news_branchen {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-
-.news_branchen .slick-track {
-    margin-left: 0;
-    margin-right: 0;
+/* Display dots */
+.news_branchen .slick-dots {
+    bottom: -20px;
+    display: block;
+    text-align: center;
 }
 
 
 .news_branchen .slick-slide {
-    margin: 0;
-    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
+
+.news_branchen .slick-center {
+    opacity: 1;
+}
+
+.container-fuild {
+    padding: 0 5%;
+}
+
+
+
+/* Show arrows only on desktop */
+@media (max-width: 1024px) {
+    .news_branchen .slick-prev,
+    .news_branchen .slick-next {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .news_branchen .slick-slide {
+        padding: 0;
+    }
+}
+
+/* Display dots below carousel and center-align */
+.news_branchen .slick-dots {
+    bottom: -20px;
+    display: block;
+    text-align: center;
+}
+
 
 .main-banner-image{
     background-image: url(../img/OverviewBanner.jpg);
