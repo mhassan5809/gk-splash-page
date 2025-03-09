@@ -44,7 +44,52 @@
     .hide-sticky {
       display: none;
     }
+    .slick-dots {
+      margin-top: 6px;
+    }
+
+    .slick-dots li {
+      margin: 0 1px;
+    }
   </style>
+  <style>
+    /* Custom list styling */
+    .gold-benefits-list {
+        list-style: none;
+        padding: 0;
+    }
+    .gold-benefits-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .gold-benefits-list li::before {
+        content: '';
+        display: inline-block;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+    
+    /* Responsive image sizing */
+    .gold-benefits-list li::before {
+        width: 28px;
+        height: 28px;
+    }
+    @media (min-width: 768px) {
+        .gold-benefits-list li::before {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    /* List marker images */
+    .benefit-bars::before { background: url('./img/overview/bars-small.png') no-repeat center/contain; }
+    .benefit-bag::before { background: url('./img/overview/bag.png') no-repeat center/contain; }
+    .benefit-bank::before { background: url('./img/overview/bank-small.png') no-repeat center/contain; }
+    .benefit-shield::before { background: url('./img/overview/shield.png') no-repeat center/contain; }
+    .benefit-taka-small::before { background: url('./img/overview/small-taka.png') no-repeat center/contain; }
+    .benefit-taka-round::before { background: url('./img/overview/taka-round.png') no-repeat center/contain; }
+</style>
 </head>
 <body class="bg-white">
   <!-- Header -->
@@ -72,58 +117,27 @@
   </section>
 
   <!-- Why Save Gold Section - Updated with new background and shadow -->
-<section class="why-save-gold py-8" >
+  <section class="why-save-gold py-8">
     <div class="container mx-auto px-5 md:px-56">
-      
-      <div class="bg-yellow-50 rounded-2xl shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-6" style="background: linear-gradient(180deg, #F9F1E1 0%, #FFFFFF 68.82%);" style="box-shadow: 0px 4px 8px 0px #8F8F8F0F, 0px 0px 0px 1px #EAEAEA;">
-        <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">কেন গোল্ড সঞ্চয় করবেন?</h2>
-        <div class="grid grid-cols-2 gap-6">
-          <!-- Left column -->
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/bars-small.png" alt="Gold Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">দীর্ঘমেয়াদী সঞ্চয়ের সেরা মাধ্যম</p>
+        <div class="bg-yellow-50 rounded-2xl shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-6" style="background: linear-gradient(180deg, #F9F1E1 0%, #FFFFFF 68.82%);">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">কেন গোল্ড সঞ্চয় করবেন?</h2>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <ul class="gold-benefits-list">
+                    <li class="benefit-bars text-[10px] md:text-xs">দীর্ঘমেয়াদী সঞ্চয়ের সেরা মাধ্যম</li>
+                    <li class="benefit-bag text-[10px] md:text-xs">সহজে সংরক্ষণ করা যায়</li>
+                    <li class="benefit-bank text-[10px] md:text-xs">মুদ্রাস্ফীতি থেকে সুরক্ষা</li>
+                </ul>
+                
+                <ul class="gold-benefits-list">
+                    <li class="benefit-shield text-[10px] md:text-xs">লিক্যুইড অ্যাসেট হিসেবে পরিচিত</li>
+                    <li class="benefit-taka-small text-[10px] md:text-xs">সহজেই বিক্রয়ের সুবিধা</li>
+                    <li class="benefit-taka-round text-[10px] md:text-xs">চলতিমূল্যে রিসেল করা যায়</li>
+                </ul>
             </div>
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/bag.png" alt="Lock Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">সহজে সংরক্ষণ করা যায়</p>
-            </div>
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/bank-small.png" alt="Protection Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">মুদ্রাস্ফীতি থেকে সুরক্ষা</p>
-            </div>
-          </div>
-          <!-- Right column -->
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/shield.png" alt="Account Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">লিক্যুইড অ্যাসেট হিসেবে পরিচিত</p>
-            </div>
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/small-taka.png" alt="Investment Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">সহজেই বিক্রয়ের সুবিধা</p>
-            </div>
-            <div class="flex items-start">
-              <div class="mr-3 text-gold mt-2 ">
-                <img src="./img/overview/taka-round.png" alt="Growth Icon" class=" w-7 md:w-5 h-auto">
-              </div>
-              <p class="">চলতিমূল্যে রিসেল করা যায়</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- Our Features Section - Updated to match Image 1 -->
   <section class="our-features py-8">
@@ -136,53 +150,53 @@
         <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
           <div class="text-center mb-4">
             <img src="./img/overview/bars-big.png" alt="Gold Bars" class="h-12 w-auto mx-auto">
-            <h3 class="text-xl font-semibold my-2">গোল্ড ক্রয়</h3>
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড ক্রয়</h3>
           </div>
-          <p class="text-sm text-center md:px-20">সর্বনিম্ন ৳৫০০ থেকে শুরু করে অফিসিয়াল বাজারমূল্যে ২২ ক্যারেট হলমার্ক ও সার্টিফাইড গোল্ড ক্রয় করে অ্যাপে সঞ্চয় করুন</p>
+          <p class="text-[10px] md:text-sm text-center md:px-20">সর্বনিম্ন ৳৫০০ থেকে শুরু করে অফিসিয়াল বাজারমূল্যে ২২ ক্যারেট হলমার্ক ও সার্টিফাইড গোল্ড ক্রয় করে অ্যাপে সঞ্চয় করুন</p>
         </div>
         
         <!-- Feature 2: Gold Delivery -->
         <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
           <div class="text-center mb-4">
             <img src="./img/overview/pickup-gold.png" alt="Delivery Truck" class="h-12 w-auto mx-auto">
-            <h3 class="text-xl font-semibold my-2">গোল্ড উত্তোলন</h3>
+            <h3 class="text-lg md:text-xl  font-semibold my-2">গোল্ড উত্তোলন</h3>
           </div>
-          <p class="text-sm text-center md:px-20">অ্যাপে সঞ্চিত গোল্ড ১, ৫, ও ১০ গ্রামের গোল্ড বার এবং  ২ ও ৪ গ্রামের গোল্ড কয়েন আকারে উত্তোলন করুন দেশের যেকোনো প্রান্ত থেকে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-20">অ্যাপে সঞ্চিত গোল্ড ১, ৫, ও ১০ গ্রামের গোল্ড বার এবং  ২ ও ৪ গ্রামের গোল্ড কয়েন আকারে উত্তোলন করুন দেশের যেকোনো প্রান্ত থেকে</p>
         </div>
         
         <!-- Feature 3: Gold Gift -->
         <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
           <div class="text-center mb-4">
             <img src="./img/overview/box-circle.png" alt="Gift Icon" class="h-12 w-auto mx-auto">
-            <h3 class="text-xl font-semibold my-2">গোল্ড গিফ্ট</h3>
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড গিফ্ট</h3>
           </div>
-          <p class="text-sm text-center md:px-20">গোল্ড কিনেন অ্যাকাউন্ট থেকে প্রিয়জনকে সঞ্চিত গোল্ড উপহার দিন যেকোনো সময়, যেকোনো পরিমাণে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-20">গোল্ড কিনেন অ্যাকাউন্ট থেকে প্রিয়জনকে সঞ্চিত গোল্ড উপহার দিন যেকোনো সময়, যেকোনো পরিমাণে</p>
         </div>
         
         <!-- Feature 4: Gold Sale -->
         <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
           <div class="text-center mb-4">
             <img src="./img/overview/taka-big.png" alt="Sale Icon" class="h-12 w-auto mx-auto">
-            <h3 class="text-xl font-semibold my-2">গোল্ড বিক্রয়</h3>
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড বিক্রয়</h3>
           </div>
-          <p class="text-sm text-center md:px-20">তিনটি সহজ ধাপে অ্যাপে সঞ্চিত গোল্ড বিক্রয় করুন যেকোনো পরিমাণে যেকোনো সময়ে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-20">তিনটি সহজ ধাপে অ্যাপে সঞ্চিত গোল্ড বিক্রয় করুন যেকোনো পরিমাণে যেকোনো সময়ে</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Product Showcase Section - Updated layout -->
-  <section class="product-showcase py-8 bg-navy text-white">
-    <div class="md:px-4">
-      <div class="flex flex-col md:flex-row items-center justify-center">
+  <section class="bg-navy text-white">
+    <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center justify-around">
         <!-- Product Image - 70% width -->
-        <div class="w-7/10 md:pr-6 mb-6 md:mb-0">
-          <img src="./img/productsection.png" alt="Gold Products" class="w-full h-auto rounded">
+        <div class="w-7/10 md:pr-6 mb-0 md:h-32">
+          <img src="./img/productsection.png" alt="Gold Products" class="object-fit w-auto h-auto md:pr-6 rounded">
         </div>
         
         <!-- Product Text - 30% width -->
-        <div class="p-5 md:p-0 md:w-[30%]">
-          <p class="mb-4">ট্যাম্পার-প্রুফ প্যাকিজিংয়ে <span class="text-gold">১, ৫ ও ১০ গ্রামের গোল্ড বার</span> এবং <span class="text-gold">২ ও ৪ গ্রামের গোল্ড কয়েন</span> থাকবে নিরাপদ ও সুরক্ষিত</p>
+        <div class="px-5 md:p-0 w-[50%] md:w-[20%] text-[6px] md:text-sm">
+          <p class="">ট্যাম্পার-প্রুফ প্যাকিজিংয়ে <span class="text-gold">১, ৫ ও ১০ গ্রামের গোল্ড বার</span> এবং <span class="text-gold">২ ও ৪ গ্রামের গোল্ড কয়েন</span> থাকবে নিরাপদ ও সুরক্ষিত</p>
         </div>
       </div>
     </div>
@@ -192,13 +206,13 @@
   <section class="location-map">
     <div class="container mx-auto">
       
-      <div class="map-container flex flex-col md:flex-row relative bg-white rounded-lg shadow-sm">
-        <div class=" p-10 md:p-32 md:w-1/2">
+      <div class="map-container flex flex-row relative bg-white rounded-lg shadow-sm">
+        <div class=" p-5 md:p-24 w-3/5 md:w-1/2 flex flex-row justify-center items-center">
             <img src="./img/bd-map.png" alt="Bangladesh Map" class="w-full h-auto rounded-lg">
         </div>
-        <div class="md:w-1/2 flex flex-col items-start justify-center p-5 md:p-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">দেশব্যাপী গোল্ড ডেলিভারি</h2>
-            <p class="text-start mt-4">গোল্ড কিনেন অ্যাপে সঞ্চিত গোল্ড উত্তোলন করুন বাংলাদেশের যেকোনো স্থান থেকে। উত্তোলনকৃত গোল্ড ঢাকা সিটি কর্পোরেশনের মধ্যে হোম ডেলিভারি এবং সারাদেশে পিকআপ সার্ভিসের মাধ্যমে পৌঁছে যাবে আপনার কাছে। উত্তোলন অনুরোধের পরবর্তী ৫ কর্মদিবসে ঢাকার মধ্যে এবং ১০ কর্মদিবসে ঢাকার বাহিরে নির্বাচিত ঠিকানায় পৌঁছে যাবে আপনার গোল্ড।</p>
+        <div class="w-2/5 md:w-1/2 flex flex-col items-start justify-center p-2 md:p-10">
+            <h2 class="text-xs md:text-3xl font-bold">দেশব্যাপী গোল্ড ডেলিভারি</h2>
+            <p class="text-[6px] md:text-[10px] mt-4 md:pr-44 text-start">গোল্ড কিনেন অ্যাপে সঞ্চিত গোল্ড উত্তোলন করুন বাংলাদেশের যেকোনো স্থান থেকে। উত্তোলনকৃত গোল্ড ঢাকা সিটি কর্পোরেশনের মধ্যে হোম ডেলিভারি এবং সারাদেশে পিকআপ সার্ভিসের মাধ্যমে পৌঁছে যাবে আপনার কাছে। উত্তোলন অনুরোধের পরবর্তী ৫ কর্মদিবসে ঢাকার মধ্যে এবং ১০ কর্মদিবসে ঢাকার বাহিরে নির্বাচিত ঠিকানায় পৌঁছে যাবে আপনার গোল্ড।</p>
         </div>
       </div>
     </div>
@@ -309,48 +323,56 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Left Column - Partners -->
                 <div class="w-full space-y-4">
-                  <div class="w-full flex items-center justify-around">
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">পেমেন্ট পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
                     <div class="flex items-center justify-center w-1/2">
                       <img src="./img/overview/bkashpayment.png" alt="bKash" class="h-8 w-auto">
                     </div>
-                    <p class="mr-4">:</p>
-                    <p class="text-start">পেমেন্ট পার্টনার</p>
                   </div>
-                  <div class="w-full flex items-center justify-around">
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">ইন্স্যুরেন্স পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
                     <div class="flex items-center justify-center w-1/2">
                       <img src="./img/overview/greendelta.png" alt="Green Delta Insurance" class="h-8 w-auto">
                     </div>
-                    <p class="mr-4">:</p>
-                    <p class="text-start">ইন্স্যুরেন্স পার্টনার</p>
                   </div>
-                  <div class="w-full flex items-center justify-around">
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">ভল্ট ম্যানেজমেন্ট পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
                     <div class="flex items-center justify-center w-1/2">
                       <img src="./img/overview/securex.png" alt="SecureX" class="h-8 w-auto">
                     </div>
-                    <p class="mr-4">:</p>
-                    <p class="text-start">ভল্ট ম্যানেজমেন্ট পার্টনার</p>
                   </div>
                 </div>
+
+                <div class="bg-gray-100 w-full h-[1px] md:hidden"></div>
                 
                 <!-- Right Column - Licenses -->
-                <div class="space-y-4">
+                <div class="space-y-6">
                   <div class="flex items-center gap-2">
                     <div class="text-gold">
-                      <img src="./img/overview/shield.png" alt="Account Icon" class=" w-7 md:w-5 h-auto">
+                      <img src="./img/overview/shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
                     </div>
-                    <p class="mt-2">ট্রেড লাইসেন্স: TRAD/DNCC/037208/2022</p>
+                    <p class="mt-2 text-[10px] md:text-sm">ট্রেড লাইসেন্স: TRAD/DNCC/037208/2022</p>
                   </div>
                   <div class="flex items-center gap-2">
                     <div class="text-gold">
-                      <img src="./img/overview/shield.png" alt="Account Icon" class=" w-7 md:w-5 h-auto">
+                      <img src="./img/overview/shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
                     </div>
-                    <p class="mt-2">বিন: 004827615-0101</p>
+                    <p class="mt-2 text-[10px] md:text-sm">বিন: 004827615-0101</p>
                   </div>
                   <div class="flex items-center gap-2">
                     <div class="text-gold">
-                      <img src="./img/overview/shield.png" alt="Account Icon" class=" w-7 md:w-5 h-auto">
+                      <img src="./img/overview/shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
                     </div>
-                    <p class="mt-2">ডিবিআইডি: 75116006</p>
+                    <p class="mt-2 text-[10px] md:text-sm">ডিবিআইডি: 75116006</p>
                   </div>
                 </div>
               </div>
