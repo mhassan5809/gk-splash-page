@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Kinen - Gold Investment and Trading</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script> -->
+  <!-- Slick Slider CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': '#081838',
+            'gold': '#E8BD59',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Noto Sans Bengali', Arial, sans-serif;
+    }
+    .sticky-bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+    .hide-sticky {
+      display: none;
+    }
+    .slick-dots {
+      margin-top: 6px;
+    }
+
+    .slick-dots li {
+      margin: 0 1px;
+    }
+  </style>
+  <style>
+    /* Custom list styling */
+    .gold-benefits-list {
+        list-style: none;
+        padding: 0;
+    }
+    .gold-benefits-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .gold-benefits-list li::before {
+        content: '';
+        display: inline-block;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+    
+    /* Responsive image sizing */
+    .gold-benefits-list li::before {
+        width: 18px;
+        height: 18px;
+    }
+    @media (min-width: 768px) {
+        .gold-benefits-list li::before {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    /* List marker images */
+    .benefit-bars::before { background: url('./img/overview/bars-small.png') no-repeat center/contain; }
+    .benefit-bag::before { background: url('./img/overview/bag.png') no-repeat center/contain; }
+    .benefit-bank::before { background: url('./img/overview/bank-small.png') no-repeat center/contain; }
+    .benefit-shield::before { background: url('./img/overview/shield.png') no-repeat center/contain; }
+    .benefit-taka-small::before { background: url('./img/overview/small-taka.png') no-repeat center/contain; }
+    .benefit-taka-round::before { background: url('./img/overview/taka-round.png') no-repeat center/contain; }
+</style>
+</head>
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-navy text-white py-4">
+    <div class="container mx-auto px-4 flex flex-row justify-between items-center">
+      <div class="logo mb-2 md:mb-0">
+        <img src="./img/overview/englogo.png" alt="Gold Kinen Logo" class="h-10">
+      </div>
+      <div class="contact-info text-center md:text-right">
+        <div class="phone mb-1">
+          <i class="fas fa-phone-alt mr-2"></i>
+          <span>+88 09610-964655</span>
+        </div>
+        <div class="email">
+          <i class="fas fa-envelope mr-2"></i>
+          <span>info@goldkinen.com</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero relative">
+    <img src="./img/Website-Banner-Overview-[10-03-2025].jpg" alt="Gold Bars" class="w-full h-auto">
+  </section>
+
+  <!-- Why Save Gold Section - Updated with new background and shadow -->
+  <section class="why-save-gold py-8">
+    <div class="container mx-auto px-5 md:px-56">
+        <div class="bg-yellow-50 rounded-2xl shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-6" style="background: linear-gradient(180deg, #F9F1E1 0%, #FFFFFF 68.82%);">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">কেন গোল্ড সঞ্চয় করবেন?</h2>
+            
+            <div class="grid grid-cols-2 gap-3">
+                <ul class="gold-benefits-list">
+                    <li class="benefit-bars text-[8px] md:text-xs">দীর্ঘমেয়াদী সঞ্চয়ের সেরা মাধ্যম</li>
+                    <li class="benefit-bag text-[8px] md:text-xs">সহজে সংরক্ষণ করা যায়</li>
+                    <li class="benefit-bank text-[8px] md:text-xs">মুদ্রাস্ফীতি থেকে সুরক্ষা</li>
+                </ul>
+                
+                <ul class="gold-benefits-list">
+                    <li class="benefit-shield text-[8px] md:text-xs">লিক্যুইড অ্যাসেট হিসেবে পরিচিত</li>
+                    <li class="benefit-taka-small text-[8px] md:text-xs">সহজেই বিক্রয়ের সুবিধা</li>
+                    <li class="benefit-taka-round text-[8px] md:text-xs">চলতিমূল্যে রিসেল করা যায়</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Our Features Section - Updated to match Image 1 -->
+  <section class="our-features py-8">
+    <div class="container mx-auto px-4 md:px-80">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">অ্যাপের বৈশিষ্ট্য</h2>
+      
+      <!-- Feature Grid - 2x2 layout -->
+      <div class="grid grid-cols-2 gap-4 md:gap-10">
+        <!-- Feature 1: Gold Purchase -->
+        <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
+          <div class="text-center mb-4">
+            <img src="./img/overview/bars-big.png" alt="Gold Bars" class="h-12 w-auto mx-auto">
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড ক্রয়</h3>
+          </div>
+          <p class="text-[10px] md:text-sm text-center md:px-20">সর্বনিম্ন ৳৫০০ থেকে শুরু করে অফিসিয়াল বাজারমূল্যে ২২ ক্যারেট হলমার্ক ও সার্টিফাইড গোল্ড ক্রয় করে অ্যাপে সঞ্চয় করুন</p>
+        </div>
+        
+        <!-- Feature 2: Gold Delivery -->
+        <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
+          <div class="text-center mb-4">
+            <img src="./img/overview/pickup-gold.png" alt="Delivery Truck" class="h-12 w-auto mx-auto">
+            <h3 class="text-lg md:text-xl  font-semibold my-2">গোল্ড উত্তোলন</h3>
+          </div>
+          <p class="text-[10px] md:text-sm text-center md:px-20">অ্যাপে সঞ্চিত গোল্ড ১, ৫, ও ১০ গ্রামের গোল্ড বার এবং  ২ ও ৪ গ্রামের গোল্ড কয়েন আকারে উত্তোলন করুন দেশের যেকোনো প্রান্ত থেকে</p>
+        </div>
+        
+        <!-- Feature 3: Gold Gift -->
+        <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
+          <div class="text-center mb-4">
+            <img src="./img/overview/box-circle.png" alt="Gift Icon" class="h-12 w-auto mx-auto">
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড গিফ্ট</h3>
+          </div>
+          <p class="text-[10px] md:text-sm text-center md:px-20">গোল্ড কিনেন অ্যাকাউন্ট থেকে প্রিয়জনকে সঞ্চিত গোল্ড উপহার দিন যেকোনো সময়, যেকোনো পরিমাণে</p>
+        </div>
+        
+        <!-- Feature 4: Gold Sale -->
+        <div class="bg-white rounded-lg shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-5">
+          <div class="text-center mb-4">
+            <img src="./img/overview/taka-big.png" alt="Sale Icon" class="h-12 w-auto mx-auto">
+            <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড বিক্রয়</h3>
+          </div>
+          <p class="text-[10px] md:text-sm text-center md:px-20">তিনটি সহজ ধাপে অ্যাপে সঞ্চিত গোল্ড বিক্রয় করুন যেকোনো পরিমাণে যেকোনো সময়ে</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section - Updated layout -->
+  <section class="bg-navy text-white">
+    <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center justify-around">
+        <!-- Product Image - 70% width -->
+        <div class="w-7/10 md:pr-6 mb-0">
+          <img src="./img/overview/productsection.png" alt="Gold Products" class="object-fit w-full h-auto md:pr-6 rounded">
+        </div>
+        
+        <!-- Product Text - 30% width -->
+        <div class="px-2 md:p-0 w-[50%] md:w-[20%] text-[6px] md:text-xl">
+          <div class="flex items-center">
+            <p class="h-15">ট্যাম্পার-প্রুফ প্যাকিজিংয়ে <span class="text-gold">১, ৫ ও ১০ গ্রামের গোল্ড বার</span> এবং <span class="text-gold">২ ও ৪ গ্রামের গোল্ড কয়েন</span> থাকবে নিরাপদ ও সুরক্ষিত</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map Section -->
+  <section class="location-map">
+    <div class="container mx-auto md:p-20 bg-[#D9D9D94D]">
+      
+      <div class="map-container flex flex-row relative">
+        <div class=" p-5 md:p-24 w-3/5 md:w-1/2 flex flex-row justify-center items-center">
+            <img src="./img/bd-map.png" alt="Bangladesh Map" class="w-full h-auto rounded-lg">
+        </div>
+        <div class="w-2/5 md:w-1/2 flex flex-col items-start justify-center p-2 md:p-10">
+            <h2 class="text-xs md:text-3xl font-bold">দেশব্যাপী গোল্ড ডেলিভারি</h2>
+            <p class="text-[6px] md:text-base mt-4 md:pr-44 text-start">গোল্ড কিনেন অ্যাপে সঞ্চিত গোল্ড উত্তোলন করুন বাংলাদেশের যেকোনো স্থান থেকে। উত্তোলনকৃত গোল্ড ঢাকা সিটি কর্পোরেশনের মধ্যে হোম ডেলিভারি এবং সারাদেশে পিকআপ সার্ভিসের মাধ্যমে পৌঁছে যাবে আপনার কাছে। উত্তোলন অনুরোধের পরবর্তী ৫ কর্মদিবসে ঢাকার মধ্যে এবং ১০ কর্মদিবসে ঢাকার বাহিরে নির্বাচিত ঠিকানায় পৌঁছে যাবে আপনার গোল্ড।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-black text-center mb-6">সংবাদে গোল্ড কিনেন</h2>
+      <div class="news-slider" id="news-slider">
+        <!-- News Item 1 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.dhakatribune.com/amp/business/345294/buy-save-gold-via-bkash-payment-from-%E2%80%98gold-kinen%E2%80%99">
+              <div class="relative">
+                <img src="./img/dhakatribune.jpg" alt="Dhaka Tribune" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 2 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.prothomalo.com/technology/u67006nctt">
+              <div class="relative">
+                <img src="./img/Paper-Ads-Thumbnail-Prothom-Alo-[24-Jan-2025].jpg" alt="Prothom Alo" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 3 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.bd-pratidin.com/sports/2024/12/25/1065320">
+              <div class="relative">
+                <img src="./img/Bangladesh-Pratidin-[25-Dec-2024].jpg" alt="Bangladesh Pratidin" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 4 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.tbsnews.net/economy/corporates/gold-kinen-bangladeshs-first-certified-22-karat-gold-app-providing-digital-access">
+              <div class="relative">
+                <img src="./img/business.png" alt="The Business Standard" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 5 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.prothomalo.com/business/corporate/ktj57fo6w4">
+              <div class="relative">
+                <img src="./img/Prothom-Alo-[11-Nov-2024].jpg" alt="Prothom Alo" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 6 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.dhakatribune.com/showtime/367053/my-%E2%80%98ajab-si%E2%80%99-moment">
+              <div class="relative">
+                <img src="./img/Dhaka-Tribune-[05-Dec-2024].jpg" alt="Dhaka Tribune" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 7 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://www.daily-sun.com/post/783754">
+              <div class="relative">
+                <img src="./img/Daily-Sun-[25-Dec-2024].jpg" alt="Daily Sun" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- News Item 8 -->
+        <div class="slide px-1 mb-6">
+          <div class="bg-white rounded shadow-md transition-shadow duration-300 hover:shadow-xl h-full">
+            <a href="https://today.thefinancialexpress.com.bd/views-reviews/why-now-is-a-good-time-to-invest-in-gold-1732379317">
+              <div class="relative">
+                <img src="./img/The-Financial-Express-Bangladesh-[23-Nov-2024]-Paper-Ads-Thumbnail.jpg" alt="The Financial Express" class="w-full rounded-t">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certification Section - Updated to match Image 3 -->
+  <section class="certification py-8">
+    <div class="container mx-auto px-5 md:px-56">
+        <div  class="rounded-2xl shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] p-6" style="background: linear-gradient(180deg, #F9F1E1 0%, #FFFFFF 68.82%);" style="box-shadow: 0px 4px 8px 0px #8F8F8F0F, 0px 0px 0px 1px #EAEAEA;">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">পার্টনার ও লাইসেন্স সমূহ</h2>
+            <div class="w-full rounded-2xl p-6 shadow-sm">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Left Column - Partners -->
+                <div class="w-full space-y-4">
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">পেমেন্ট পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
+                    <div class="flex items-center justify-center w-1/2">
+                      <img src="./img/overview/bkashpayment.png" alt="bKash" class="h-8 w-auto">
+                    </div>
+                  </div>
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">ইন্স্যুরেন্স পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
+                    <div class="flex items-center justify-center w-1/2">
+                      <img src="./img/overview/greendelta.png" alt="Green Delta Insurance" class="h-8 w-auto">
+                    </div>
+                  </div>
+                  <div class="w-full flex items-center justify-between">
+                    <div class="flex flex-row justify-between w-2/3 items-center">
+                      <p class="text-[10px] md:text-sm">ভল্ট ম্যানেজমেন্ট পার্টনার</p>
+                    <p class="mr-4">:</p>
+                    </div>
+                    <div class="flex items-center justify-center w-1/2">
+                      <img src="./img/overview/securex.png" alt="SecureX" class="h-8 w-auto">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-gray-100 w-full h-[1px] md:hidden"></div>
+                
+                <!-- Right Column - Licenses -->
+                <div class="space-y-6">
+                  <div class="flex items-center gap-2">
+                    <div class="text-gold">
+                      <img src="./img/overview/inverted-shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
+                    </div>
+                    <p class="mt-2 text-[10px] md:text-sm">ট্রেড লাইসেন্স: TRAD/DNCC/037208/2022</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-gold">
+                      <img src="./img/overview/inverted-shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
+                    </div>
+                    <p class="mt-2 text-[10px] md:text-sm">বিন: 004827615-0101</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-gold">
+                      <img src="./img/overview/inverted-shield.png" alt="Account Icon" class="w-auto h-5 md:h-7">
+                    </div>
+                    <p class="mt-2 text-[10px] md:text-sm">ডিবিআইডি: 75116006</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+  </section>
+
+  <div class="bg-[#001440] py-4 px-6 flex justify-center items-center gap-8 z-50" id="actions-footer">
+    <!-- Message Button -->
+    <a href="#" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
+      <i class="fab fa-facebook-messenger text-[#001440] text-2xl"></i>
+    </a>
+  
+    <!-- Download Button -->
+    <a href="#" class="bg-[#e8bd59] text-[#001440] font-bold text-sm md:text-lg text-center py-3 px-3 md:px-5 rounded-full shadow-lg">
+      Download Now
+    </a>
+  
+    <!-- Call Button -->
+    <a href="tel:+8809610964655" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
+      <i class="fas fa-phone-alt text-[#001440] text-2xl"></i>
+    </a>
+  </div>
+
+  <footer class="bg-navy py-8 px-9 text-white md:px-20 lg:px-28" id="footer">
+    <div class="justify-between border-b border-[#B5BAC4]/20 pb-8 md:flex">
+      <div>
+        <img src="/img/logo.png" alt="gklogo" class="h-18 w-44 object-scale-down md:max-w-md xs:object-fill" />
+      </div>
+      <div class="lg:px-10">
+        <div class="mt-4 flex space-x-6">
+          <a href="https://www.facebook.com/goldkinen" target="_blank" class="block">
+            <i class="fab fa-facebook text-3xl"></i>
+          </a>
+          <a href="https://www.instagram.com/goldkinen/" target="_blank" class="block">
+            <i class="fab fa-instagram text-3xl"></i>
+          </a>
+          <a href="https://www.youtube.com/@goldkinen" target="_blank" class="block">
+            <i class="fab fa-youtube text-3xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Desktop Footer Links -->
+    <div class="hidden gap-4 py-4 pt-8 lg:grid lg:grid-cols-4">
+      <div class="space-y-4">
+        <a target="_blank" href="https://www.goldkinen.com/faq" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">সচরাচর জিজ্ঞাস্য</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/how-it-works" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">কিভাবে গোল্ড কিনবেন</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/contact-us" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">যোগাযোগ করুন</p>
+        </a>
+      </div>
+      <div class="space-y-4">
+        <a target="_blank" href="https://www.goldkinen.com/about-us" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">আমাদের সম্পর্কে</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/privacy_policy" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">গোপনীয়তা নীতি</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/terms-of-use" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">শর্তাবলী</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/pickup-points" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">পিকআপ পয়েন্ট</p>
+        </a>
+      </div>
+      <div class="space-y-4">
+        <a target="_blank" href="https://www.goldkinen.com/refund_policy" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">রিফান্ড ও রিটার্ন নীতিমালা</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/delivery_protocol" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">ডেলিভারি নীতি এবং প্রোটোকল</p>
+        </a>
+        <a target="_blank" href="https://www.goldkinen.com/scheduled-charges" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">চার্জসমূহের তালিকা</p>
+        </a>
+        <a href="javascript:void(0)" class="block">
+          <p class="text-sm font-normal text-[#FFFFFF]">
+            <strong>Trade License No:</strong> TRAD/DNCC/037208/2022 <br />
+            <strong>BIN:</strong> <a href="https://nbr.gov.bd/" target="_blank">004827615-0101</a> <br/>
+            <strong>DBID No:</strong> <a href="https://dbid.gov.bd/verified-dbid-company" target="_blank">751116006</a>
+          </p>
+        </a>
+      </div>
+      <div class="space-y-2">
+        <p class="text-start text-sm font-normal text-[#FFFFFF]/60">
+            রেজিস্ট্রেশনকৃত ঠিকানা: হাউজ-৮৪, লেভেল-৬, রোড-11, ব্লক-ডি, বনানী, ঢাকা-১২১৩
+        </p>
+        <p class="text-start text-sm font-normal text-[#FFFFFF]">
+          ইমেইল: <span><a href="mailto:info@goldkinen.com">info@goldkinen.com</a></span>
+        </p>
+        
+        <div class="download-mirror mt-4" id="download-mirror">
+          <p class="text-xl font-bold text-white pb-2">ডাউনলোড অ্যাপ</p>
+          <div class="pb-4 text-sm flex space-x-5 font-normal leading-6 text-[#FFFFFF]/50">
+            <a href="https://play.google.com/store/apps/details?id=com.goldkinen.android" target="_blank">
+              <img src="/img/overview/Play Store Icon.png" alt="Play Store" class="h-16 lg:h-11" />
+            </a>
+            <a href="https://apps.apple.com/bn/app/gold-kinen/id6443875166" target="_blank">
+              <img src="/img/overview/App Store Icon.png" alt="App Store" class="h-16 lg:h-11" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Footer Links -->
+    <div class="lg:hidden">
+      <div>
+        <div class="grid grid-cols-2 gap-4 py-4 pt-8 md:grid-cols-3">
+          <div class="space-y-4">
+            <a target="_blank" href="https://www.goldkinen.com/faq" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">সচরাচর জিজ্ঞাস্য</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/how-it-works" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">কিভাবে গোল্ড কিনবেন</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/contact-us" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">যোগাযোগ করুন</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/about-us" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">আমাদের সম্পর্কে</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/pickup-points">
+              <p class="text-sm font-normal text-[#FFFFFF] my-4">পিকআপ পয়েন্ট</p>
+            </a>
+          </div>
+          <div class="space-y-4">
+            <a target="_blank" href="https://www.goldkinen.com/privacy_policy" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">গোপনীয়তা নীতি</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/terms-of-use" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">শর্তাবলী</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/refund_policy" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">রিফান্ড ও রিটার্ন নীতিমালা</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/delivery_protocol" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">ডেলিভারি নীতি এবং প্রোটোকল</p>
+            </a>
+            <a target="_blank" href="https://www.goldkinen.com/scheduled-charges" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">চার্জসমূহের তালিকা</p>
+            </a>
+            <a href="javascript:void(0)" class="block">
+              <p class="text-sm font-normal text-[#FFFFFF]">
+                <strong>Trade License No:</strong> TRAD/DNCC/037208/2022 <br />
+                <strong>BIN:</strong> <a href="https://nbr.gov.bd/" target="_blank">004827615-0101</a> <br/> <br/>
+                <strong>DBID No:</strong> <a href="https://dbid.gov.bd/verified-dbid-company" target="_blank">751116006</a> <br />
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile Download Section -->
+      <div class="w-full py-16 md:w-96">
+        <div class="space-y-2">
+          <p class="text-start text-sm font-normal text-[#FFFFFF]/60">
+            রেজিস্ট্রেশনকৃত ঠিকানা: হাউজ-৮৪, লেভেল-৬, রোড-11, ব্লক-ডি, বনানী, ঢাকা-১২১৩
+          </p>
+          <p class="text-start text-sm font-normal text-[#FFFFFF]">
+            ইমেইল: <span><a href="mailto:info@goldkinen.com">info@goldkinen.com</a></span>
+          </p>
+          
+          <!-- Mobile Download Mirror Section -->
+          <div class="download-mirror">
+            <p class="text-xl font-bold text-white">ডাউনলোড অ্যাপ</p>
+            <div class="pb-4 text-sm flex space-x-5 font-normal leading-6 pt-2 text-[#FFFFFF]/50">
+              <a href="https://play.google.com/store/apps/details?id=com.goldkinen.android" target="_blank">
+                <img src="/img/overview/Play Store Icon.png" alt="Play Store" class="h-11 lg:h-11" />
+              </a>
+              <a href="https://apps.apple.com/bn/app/gold-kinen/id6443875166" target="_blank">
+                <img src="/img/overview/App Store Icon.png" alt="App Store" class="h-11 lg:h-11" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p class="text-start text-sm font-normal text-[#FFFFFF]/60 md:py-4 lg:py-0">
+      © 2025 Gold Kinen Technologies Ltd. All Rights Reserved.
+    </p>
+  </footer>
+  
+  <!-- Sticky Mobile Actions -->
+  <div class="sticky-bottom bg-[#001440] py-4 px-6 flex justify-center items-center gap-8 fixed bottom-0 left-0 right-0 z-50" id="sticky-actions">
+    <!-- Message Button -->
+    <a href="#" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
+      <i class="fab fa-facebook-messenger text-[#001440] text-2xl"></i>
+    </a>
+  
+    <!-- Download Button -->
+    <a href="#" class="bg-[#e8bd59] text-[#001440] font-bold text-sm md:text-lg text-center py-3 px-3 md:px-5 rounded-full shadow-lg">
+      Download Now
+    </a>
+  
+    <!-- Call Button -->
+    <a href="tel:+8809610964655" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
+      <i class="fas fa-phone-alt text-[#001440] text-2xl"></i>
+    </a>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the news slider if it exists
+      if (typeof $('#news-slider').slick === 'function') {
+        $('#news-slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      }
+  
+      // Get necessary elements
+      const stickyActions = document.getElementById('sticky-actions');
+      const footer = document.getElementById('footer');
+      const downloadMirror = document.querySelector('.download-mirror');
+      
+      function checkFooterAndMirrorVisibility() {
+        if (!stickyActions || !footer) return;
+        
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Check for footer visibility
+        if (footerRect.top < windowHeight) {
+          stickyActions.classList.add('opacity-0', 'pointer-events-none');
+          stickyActions.classList.remove('opacity-100');
+        } else {
+          stickyActions.classList.remove('opacity-0', 'pointer-events-none');
+          stickyActions.classList.add('opacity-100');
+        }
+        
+        // Check for download mirror visibility specifically
+        if (downloadMirror) {
+          const mirrorRect = downloadMirror.getBoundingClientRect();
+          if (mirrorRect.top < windowHeight && mirrorRect.bottom > 0) {
+            stickyActions.classList.add('opacity-0', 'pointer-events-none');
+            stickyActions.classList.remove('opacity-100');
+          }
+        }
+      }
+      
+      // Add transition for smooth hiding/showing
+      stickyActions.classList.add('transition-opacity', 'duration-300');
+      
+      window.addEventListener('scroll', checkFooterAndMirrorVisibility);
+      window.addEventListener('resize', checkFooterAndMirrorVisibility);
+      
+      // Check on initial load
+      checkFooterAndMirrorVisibility();
+    });
+  </script>
+</body>
+</html>
