@@ -97,41 +97,39 @@
   </style>
   <style>
     /* Custom list styling */
-    .gold-benefits-list {
-        list-style: none;
-        padding: 0;
-    }
-    .gold-benefits-list li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
+.gold-benefits-list {
+    list-style: none;
+    padding: 0;
+}
+.gold-benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.gold-benefits-list li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+    flex-shrink: 0;
+    width: 12px; /* smaller image size */
+    height: 12px;
+}
+@media (min-width: 768px) {
     .gold-benefits-list li::before {
-        content: '';
-        display: inline-block;
-        margin-right: 0.5rem;
-        flex-shrink: 0;
+        width: 16px; /* slightly larger on tablet+ */
+        height: 16px;
     }
-    
-    /* Responsive image sizing */
-    .gold-benefits-list li::before {
-        width: 18px;
-        height: 18px;
-    }
-    @media (min-width: 768px) {
-        .gold-benefits-list li::before {
-            width: 26px;
-            height: 26px;
-        }
-    }
+}
 
-    /* List marker images */
-    .benefit-bars::before { background: url('./img/overview/bars-small.png') no-repeat center/contain; }
-    .benefit-bag::before { background: url('./img/overview/bag.png') no-repeat center/contain; }
-    .benefit-bank::before { background: url('./img/overview/bank-small.png') no-repeat center/contain; }
-    .benefit-shield::before { background: url('./img/overview/shield.png') no-repeat center/contain; }
-    .benefit-taka-small::before { background: url('./img/overview/small-taka.png') no-repeat center/contain; }
-    .benefit-taka-round::before { background: url('./img/overview/taka-round.png') no-repeat center/contain; }
+/* List marker images */
+.benefit-bars::before { background: url('./img/overview/bars-small.png') no-repeat center/contain; }
+.benefit-bag::before { background: url('./img/overview/bag.png') no-repeat center/contain; }
+.benefit-bank::before { background: url('./img/overview/bank-small.png') no-repeat center/contain; }
+.benefit-shield::before { background: url('./img/overview/shield.png') no-repeat center/contain; }
+.benefit-taka-small::before { background: url('./img/overview/small-taka.png') no-repeat center/contain; }
+.benefit-taka-round::before { background: url('./img/overview/taka-round.png') no-repeat center/contain; }
+
 </style>
 </head>
 <body class="bg-white overflow-x-hidden">
@@ -170,15 +168,15 @@
             
             <div class="grid grid-cols-2 gap-3">
                 <ul class="gold-benefits-list">
-                    <li class="benefit-bars text-[10px] md:text-xs">দীর্ঘমেয়াদী সঞ্চয়ের সেরা মাধ্যম</li>
-                    <li class="benefit-bag text-[10px] md:text-xs">সহজে সংরক্ষণ করা যায়</li>
-                    <li class="benefit-bank text-[10px] md:text-xs">মুদ্রাস্ফীতি থেকে সুরক্ষা</li>
+                    <li class="benefit-bars text-[10px] md:text-base">দীর্ঘমেয়াদী সঞ্চয়ের সেরা মাধ্যম</li>
+                    <li class="benefit-bag text-[10px] md:text-base">সহজে সংরক্ষণ করা যায়</li>
+                    <li class="benefit-bank text-[10px] md:text-base">মুদ্রাস্ফীতি থেকে সুরক্ষা</li>
                 </ul>
                 
                 <ul class="gold-benefits-list">
-                    <li class="benefit-shield text-[10px] md:text-xs">লিক্যুইড অ্যাসেট হিসেবে পরিচিত</li>
-                    <li class="benefit-taka-small text-[10px] md:text-xs">সহজেই বিক্রয়ের সুবিধা</li>
-                    <li class="benefit-taka-round text-[10px] md:text-xs">চলতিমূল্যে রিসেল করা যায়</li>
+                    <li class="benefit-shield text-[10px] md:text-base">লিক্যুইড অ্যাসেট হিসেবে পরিচিত</li>
+                    <li class="benefit-taka-small text-[10px] md:text-base">সহজেই বিক্রয়ের সুবিধা</li>
+                    <li class="benefit-taka-round text-[10px] md:text-base">চলতিমূল্যে রিসেল করা যায়</li>
                 </ul>
             </div>
         </div>
@@ -191,14 +189,14 @@
       <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">অ্যাপের বৈশিষ্ট্য</h2>
       
       <!-- Feature Grid - 2x2 layout -->
-      <div class="grid grid-cols-2 gap-4 md:gap-10">
+      <div class="grid grid-cols-2 gap-4 md:gap-8">
         <!-- Feature 1: Gold Purchase -->
         <div class="bg-white rounded-2xl flex flex-col gap-3 shadow-[0px_0px_7px_4px_rgba(0,_0,_0,_0.1)] px-5 py-10 md:p-5 md:px-0 md-py-0 ">
           <div class="text-center flex flex-col gap-2 mb-4">
             <img src="./img/overview/bars-big.png" alt="Gold Bars" class="h-12 md:h-24 w-auto mx-auto">
             <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড ক্রয়</h3>
           </div>
-          <p class="text-[10px] md:text-sm text-center md:px-44">সর্বনিম্ন ৳৫০০ থেকে শুরু করে অফিসিয়াল বাজারমূল্যে ২২ ক্যারেট হলমার্ক ও সার্টিফাইড গোল্ড ক্রয় করে অ্যাপে সঞ্চয় করুন</p>
+          <p class="text-[10px] md:text-sm text-center md:px-12">সর্বনিম্ন ৳৫০০ থেকে শুরু করে অফিসিয়াল বাজারমূল্যে ২২ ক্যারেট হলমার্ক ও সার্টিফাইড গোল্ড ক্রয় করে অ্যাপে সঞ্চয় করুন</p>
         </div>
         
         <!-- Feature 2: Gold Delivery -->
@@ -207,7 +205,7 @@
             <img src="./img/overview/truck.png" alt="Delivery Truck" class="h-12 md:h-24 w-auto mx-auto">
             <h3 class="text-lg md:text-xl  font-semibold my-2">গোল্ড উত্তোলন</h3>
           </div>
-          <p class="text-[10px] md:text-sm text-center md:px-44">অ্যাপে সঞ্চিত গোল্ড ১, ৫, ও ১০ গ্রামের গোল্ড বার এবং  ২ ও ৪ গ্রামের গোল্ড কয়েন আকারে উত্তোলন করুন দেশের যেকোনো প্রান্ত থেকে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-12">অ্যাপে সঞ্চিত গোল্ড ১, ৫, ও ১০ গ্রামের গোল্ড বার এবং  ২ ও ৪ গ্রামের গোল্ড কয়েন আকারে উত্তোলন করুন দেশের যেকোনো প্রান্ত থেকে</p>
         </div>
         
         <!-- Feature 3: Gold Gift -->
@@ -216,7 +214,7 @@
             <img src="./img/overview/gift.png" alt="Gift Icon" class="h-12 md:h-24 w-auto mx-auto">
             <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড গিফ্ট</h3>
           </div>
-          <p class="text-[10px] md:text-sm text-center md:px-44">গোল্ড কিনেন অ্যাকাউন্ট থেকে প্রিয়জনকে সঞ্চিত গোল্ড উপহার দিন যেকোনো সময়, যেকোনো পরিমাণে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-12">গোল্ড কিনেন অ্যাকাউন্ট থেকে প্রিয়জনকে সঞ্চিত গোল্ড উপহার দিন যেকোনো সময়, যেকোনো পরিমাণে</p>
         </div>
         
         <!-- Feature 4: Gold Sale -->
@@ -225,7 +223,7 @@
             <img src="./img/overview/taka-big.png" alt="Sale Icon" class="h-12 md:h-24 w-auto mx-auto">
             <h3 class="text-lg md:text-xl font-semibold my-2">গোল্ড বিক্রয়</h3>
           </div>
-          <p class="text-[10px] md:text-sm text-center md:px-44">তিনটি সহজ ধাপে অ্যাপে সঞ্চিত গোল্ড বিক্রয় করুন যেকোনো পরিমাণে যেকোনো সময়ে</p>
+          <p class="text-[10px] md:text-sm text-center md:px-12">তিনটি সহজ ধাপে অ্যাপে সঞ্চিত গোল্ড বিক্রয় করুন যেকোনো পরিমাণে যেকোনো সময়ে</p>
         </div>
       </div>
     </div>
@@ -253,12 +251,12 @@
     <div class="container mx-auto px-4 md:px-60  md:p-20 bg-[#D9D9D94D]">
       
       <div class="map-container flex flex-row relative">
-        <div class=" p-5 md:p-24 w-3/5 md:w-1/2 flex flex-row justify-center items-center">
+        <div class=" p-5 w-3/5 md:w-1/2 flex flex-row justify-center items-center">
             <img src="./img/bd-map.png" alt="Bangladesh Map" class="w-full h-auto rounded-lg">
         </div>
         <div class="w-2/5 md:w-1/2 flex flex-col items-start justify-center p-2 md:p-10">
             <h2 class="text-xs md:text-3xl font-bold">দেশব্যাপী গোল্ড ডেলিভারি</h2>
-            <p class="text-[10px] md:text-base mt-4 md:pr-44 text-start">গোল্ড কিনেন অ্যাপে সঞ্চিত গোল্ড উত্তোলন করুন বাংলাদেশের যেকোনো স্থান থেকে। উত্তোলনকৃত গোল্ড ঢাকা সিটি কর্পোরেশনের মধ্যে হোম ডেলিভারি এবং সারাদেশে পিকআপ সার্ভিসের মাধ্যমে পৌঁছে যাবে আপনার কাছে। উত্তোলন অনুরোধের পরবর্তী ৫ কর্মদিবসে ঢাকার মধ্যে এবং ১০ কর্মদিবসে ঢাকার বাহিরে নির্বাচিত ঠিকানায় পৌঁছে যাবে আপনার গোল্ড।</p>
+            <p class="text-[10px] md:text-base mt-4 md:pr-5 text-start">গোল্ড কিনেন অ্যাপে সঞ্চিত গোল্ড উত্তোলন করুন বাংলাদেশের যেকোনো স্থান থেকে। উত্তোলনকৃত গোল্ড ঢাকা সিটি কর্পোরেশনের মধ্যে হোম ডেলিভারি এবং সারাদেশে পিকআপ সার্ভিসের মাধ্যমে পৌঁছে যাবে আপনার কাছে। উত্তোলন অনুরোধের পরবর্তী ৫ কর্মদিবসে ঢাকার মধ্যে এবং ১০ কর্মদিবসে ঢাকার বাহিরে নির্বাচিত ঠিকানায় পৌঁছে যাবে আপনার গোল্ড।</p>
         </div>
       </div>
     </div>
@@ -367,30 +365,30 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Left Column - Partners -->
                 <div class="w-full space-y-4">
-                  <div class="w-full flex items-center justify-between">
-                    <div class="flex flex-row justify-between w-2/3 items-center">
-                      <p class="text-[10px] md:text-sm">পেমেন্ট পার্টনার</p>
-                    <p class="mr-4">:</p>
+                  <div class="w-full flex items-center gap-3">
+                    <div class="flex flex-row justify-between items-center">
+                      <p class="text-[10px] md:text-sm">পেমেন্ট পার্টনার:</p>
+                    
                     </div>
-                    <div class="flex items-center justify-center w-1/2">
+                    <div class="flex items-center justify-start">
                       <img src="./img/overview/bkashpayment.png" alt="bKash" class="h-8 w-auto">
                     </div>
                   </div>
-                  <div class="w-full flex items-center justify-between">
-                    <div class="flex flex-row justify-between w-2/3 items-center">
-                      <p class="text-[10px] md:text-sm">ইন্স্যুরেন্স পার্টনার</p>
-                    <p class="mr-4">:</p>
+                  <div class="w-full flex items-center gap-3 ">
+                    <div class="flex flex-row justify-between items-center">
+                      <p class="text-[10px] md:text-sm">ইন্স্যুরেন্স পার্টনার:</p>
+                   
                     </div>
-                    <div class="flex items-center justify-center w-1/2">
+                    <div class="flex items-center justify-start ">
                       <img src="./img/overview/greendelta.png" alt="Green Delta Insurance" class="h-8 w-auto">
                     </div>
                   </div>
-                  <div class="w-full flex items-center justify-between">
-                    <div class="flex flex-row justify-between w-2/3 items-center">
-                      <p class="text-[10px] md:text-sm">ভল্ট ম্যানেজমেন্ট পার্টনার</p>
-                    <p class="mr-4">:</p>
+                  <div class="w-full flex items-center gap-3 ">
+                    <div class="flex flex-row justify-betweenitems-center">
+                      <p class="text-[10px] md:text-sm">ভল্ট ম্যানেজমেন্ট পার্টনার:</p>
+                    
                     </div>
-                    <div class="flex items-center justify-center w-1/2">
+                    <div class="flex items-center justify-start ">
                       <img src="./img/overview/securex.png" alt="SecureX" class="h-8 w-auto">
                     </div>
                   </div>
@@ -443,7 +441,7 @@
     </a>
   </div>
 
-  <footer class="bg-navy py-8 px-9 text-white md:px-20 lg:px-28" id="footer">
+  <footer class="bg-navy py-8 px-9 text-white md:px-12 lg:px-28" id="footer">
     <div class="justify-between border-b border-[#B5BAC4]/20 pb-8 md:flex">
       <div>
         <img src="/img/logo.png" alt="gklogo" class="h-18 w-44 object-scale-down md:max-w-md xs:object-fill" />
@@ -610,7 +608,7 @@
   </footer>
   
   <!-- Sticky Mobile Actions -->
-  <!-- <div class="sticky-bottom bg-[#001440] py-4 px-6 flex justify-center items-center gap-8 fixed bottom-0 left-0 right-0 z-50" id="sticky-actions">
+  <div class="sticky-bottom bg-[#001440] py-4 px-6 flex justify-center items-center gap-8 fixed bottom-0 left-0 right-0 z-50" id="sticky-actions">
     <a href="#" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
       <i class="fab fa-facebook-messenger text-[#001440] text-2xl"></i>
     </a>
@@ -622,11 +620,11 @@
     <a href="tel:+8809610964655" class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-lg">
       <i class="fas fa-phone-alt text-[#001440] text-2xl"></i>
     </a>
-  </div> -->
+  </div>
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the news slider if it exists
+    // Initializing the news slider if it exists
     if (typeof $('#news-slider').slick === 'function') {
       $('#news-slider').slick({
         slidesToShow: 3,
@@ -655,19 +653,17 @@
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
-              centerMode: false // Disable centerMode on mobile
+              centerMode: false
             }
           }
         ]
       });
       
-      // Force slider to stay within bounds and recalculate after initialization
       setTimeout(function() {
         $('#news-slider').slick('setPosition');
       }, 100);
     }
   
-      // Get necessary elements
       const stickyActions = document.getElementById('sticky-actions');
       const footer = document.getElementById('footer');
       const downloadMirror = document.querySelector('.download-mirror');
@@ -678,7 +674,7 @@
         const footerRect = footer.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         
-        // Check for footer visibility
+        // Checking for footer visibility
         if (footerRect.top < windowHeight) {
           stickyActions.classList.add('opacity-0', 'pointer-events-none');
           stickyActions.classList.remove('opacity-100');
@@ -687,7 +683,7 @@
           stickyActions.classList.add('opacity-100');
         }
         
-        // Check for download mirror visibility specifically
+        // Checking for download mirror visibility specifically
         if (downloadMirror) {
           const mirrorRect = downloadMirror.getBoundingClientRect();
           if (mirrorRect.top < windowHeight && mirrorRect.bottom > 0) {
@@ -697,13 +693,13 @@
         }
       }
       
-      // Add transition for smooth hiding/showing
+      // transition for smooth hiding/showing
       stickyActions.classList.add('transition-opacity', 'duration-300');
       
       window.addEventListener('scroll', checkFooterAndMirrorVisibility);
       window.addEventListener('resize', checkFooterAndMirrorVisibility);
       
-      // Check on initial load
+      // Checking on initial load
       checkFooterAndMirrorVisibility();
     });
   </script>

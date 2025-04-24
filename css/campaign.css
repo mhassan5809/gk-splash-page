@@ -24,7 +24,6 @@ body {
 
 .bengali-numeral {
     font-weight: 700;
-    /* opacity: 0.55; */
 }
 
 .container {
@@ -66,21 +65,25 @@ body {
     background-color: white;
     border-radius: 15px;
     padding: 2.5rem;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.unordered-list {
+    margin: 0px;
+}
+
 .content-section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 .section-title {
     color: var(--primary-color);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.5rem;
     padding-left: 15px;
     border-left: 5px solid var(--secondary-color);
@@ -461,3 +464,132 @@ body {
         width: 270px;
     }
 }
+
+.section-divider {
+    width: 50%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+
+/* Sticky download button */
+
+#sticky-actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: transparent; /* transparent so inner container's border-radius shows */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  
+  #sticky-actions .sticky-inner {
+    background-color: #001440;
+    max-width: 1150px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    .sticky-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  
+  .sticky-icon i {
+    color: #001440;
+    font-size: 1.5rem;
+  }
+  
+  .download-btn {
+    background-color: #e8bd59;
+    color: #001440;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .download-btn {
+      font-size: 1.125rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+  
+/*non sticky download buttons*/
+#actions-footer {
+    background-color: #001440;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 50;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .actions-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+                text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .actions-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  
+  .actions-icon i {
+    color: #001440;
+    font-size: 1.5rem;
+  }
+  
+  .download-btn {
+    background-color: #e8bd59;
+    color: #001440;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .download-btn {
+      font-size: 1.125rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+  
