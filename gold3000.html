@@ -853,13 +853,13 @@
 					<!-- 1st Prize -->
 					<div class="feature-card prize-card">
 						<i class="fas fa-trophy feature-icon"></i>
-						<h3 class="feature-title lang-content" id="prize1stPlace">
+						<h3 class="feature-title lang-content" id="offerDetails">
 							1st Place
 						</h3>
-						
+
 						<p
 							class="prize-sub-description lang-content"
-							id="prize1details"
+							id="offerDetailsDesc"
 						></p>
 					</div>
 					<!-- 2nd Prize -->
@@ -868,7 +868,7 @@
 						<h3 class="feature-title lang-content" id="prize2ndPlace">
 							2nd Place
 						</h3>
-						
+
 						<p
 							class="prize-sub-description lang-content"
 							id="prize2details"
@@ -880,7 +880,7 @@
 						<h3 class="feature-title lang-content" id="prize3rdPlace">
 							3rd Place
 						</h3>
-						
+
 						<p
 							class="prize-sub-description lang-content"
 							id="prize3details"
@@ -1044,11 +1044,10 @@
 					offerTitle: 'Celebration Bonus Gold Offer',
 					offerSubtitle: `Celebrate this festive season with extra gold!<br>
                     From <strong>17 November to 31 December 2025</strong>, enjoy <strong>5% bonus gold</strong> on your gold purchase when you apply the promo code <strong>'GOLD3000'</strong> while buying through the <strong>Gold Kinen app</strong>.<br><br> You can earn up to <strong>BDT 3,000 worth of bonus gold</strong> during the campaign period, so the more you save, the more gold you gain!`,
-					detailsTitle: 'Offer Details',
-					prize1stPlace: '1st Place',
-				
-					prize1details:
-						'(Highest purchaser)<br>Singapore/Australian variant (Dual SIM: e-SIM + Nano SIM).',
+					detailsTitle: 'Campaign Details',
+					offerDetails: 'Offer Details',
+					offerDetailsDesc:
+						'● Receive 5% bonus gold, up to BDT 3000 worth of gold, on every eligible transaction by using the promo code ‘GOLD3000’<br/> ● The equivalent gold amount (up to BDT 3,000) will be added to your Gold Kinen account.<br/> ● The offer applies to transactions of BDT 500 or above.<br/> ● There is no daily or per-transaction limit — only a total bonus cap of BDT 3,000 per user for the entire campaign.<br/> ● You are not receiving cash (taka); you are receiving bonus gold, which will be calculated based on the official market price of 22 karat gold on the purchase date.',
 					prize2ndPlace: '2nd Place',
 					prize2details:
 						'(2nd highest purchaser)<br>Singapore/Australian variant (e-SIM).',
@@ -1174,9 +1173,9 @@
 					offerSubtitle:
 						'এই উৎসবের মৌসুমে আপনার গোল্ড সেভিংস হোক আরও সমৃদ্ধ!<br/> <strong>১৭ নভেম্বর থেকে ৩১ ডিসেম্বর ২০২৫</strong> পর্যন্ত <strong>গোল্ড কিনেন অ্যাপ</strong> থেকে গোল্ড কিনে <strong>‘GOLD3000’</strong> প্রোমো কোড ব্যবহার করলে পাবেন <strong>৫% বোনাস গোল্ড।</strong><br/><br/> পুরো ক্যাম্পেইন চলাকালীন একজন গ্রাহক সর্বোচ্চ <strong>৩,০০০ টাকা সমমূল্যের বোনাস গোল্ড</strong> পেতে পারবেন, সুতরাং যত বেশি ক্রয়, তত বেশি বোনাস গোল্ড!',
 					detailsTitle: 'অফার বিস্তারিত',
-					prize1stPlace: '১ম স্থান',
-				
-					prize1details:
+					offerDetails: '১ম স্থান',
+
+					offerDetailsDesc:
 						'(সর্বোচ্চ পরিমাণ গোল্ড ক্রয়কারী গ্রাহক)<br>Singapore/Australian variant (Dual SIM: e-SIM + Nano SIM).',
 					prize2ndPlace: '২য় স্থান',
 					prize2details:
@@ -1343,16 +1342,16 @@
 				const lang = translations[currentLang];
 
 				document.getElementById('langText').textContent = lang.langText;
-				document.getElementById('offerTitle').textContent =
-					lang.offerTitle;
+				document.getElementById('offerTitle').textContent = lang.offerTitle;
 				document.getElementById('offerSubtitle').innerHTML =
 					lang.offerSubtitle;
-				document.getElementById('detailsTitle').textContent = lang.detailsTitle;
-				document.getElementById('prize1stPlace').textContent =
-					lang.prize1stPlace;
-	
-				document.getElementById('prize1details').innerHTML =
-					lang.prize1details;
+				document.getElementById('detailsTitle').textContent =
+					lang.detailsTitle;
+				document.getElementById('offerDetails').textContent =
+					lang.offerDetails;
+
+				document.getElementById('offerDetailsDesc').innerHTML =
+					lang.offerDetailsDesc;
 				document.getElementById('prize2ndPlace').textContent =
 					lang.prize2ndPlace;
 				document.getElementById('prize2details').innerHTML =
