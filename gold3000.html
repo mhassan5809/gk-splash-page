@@ -320,8 +320,8 @@
 			}
 
 			.feature-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				display: flex;
+				flex-direction: column;
 				gap: 1.5rem;
 				margin-bottom: 3rem;
 			}
@@ -337,8 +337,10 @@
 				border-color: var(--primary-gold);
 				display: flex;
 				flex-direction: column;
-				align-items: center;
-				text-align: center;
+				align-items: flex-start;
+				text-align: left;
+				flex: 1;
+				width: 100%;
 			}
 
 			.feature-card:hover {
@@ -805,6 +807,68 @@
 					object-fit: contain;
 				}
 			}
+
+			/* Bonus Table Styles */
+			.bonus-table {
+				width: 100%;
+				border-collapse: collapse;
+				background: var(--background-light);
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+				border: 1px solid var(--border-color);
+			}
+
+			.bonus-table th {
+				background: var(--gradient-gold);
+				color: var(--primary-navy);
+				padding: 1rem;
+				text-align: left;
+				font-weight: 700;
+				font-size: 1rem;
+				letter-spacing: 0.5px;
+			}
+
+			.bonus-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--border-color);
+				color: var(--text-primary);
+				font-size: 0.95rem;
+			}
+
+			.bonus-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.bonus-table tr:hover {
+				background: rgba(255, 215, 0, 0.05);
+			}
+
+			.bonus-table .amount {
+				font-weight: 600;
+				color: var(--primary-navy);
+			}
+
+			.bonus-table .bonus {
+				font-weight: 600;
+				color: #28a745;
+			}
+
+			.bonus-table .notes {
+				font-size: 0.9rem;
+				color: var(--text-secondary);
+			}
+
+			@media (max-width: 768px) {
+				.bonus-table {
+					font-size: 0.85rem;
+				}
+				.bonus-table th,
+				.bonus-table td {
+					padding: 0.75rem 0.5rem;
+				}
+			}
 		</style>
 	</head>
 
@@ -855,54 +919,17 @@
 					<!-- 1st Prize -->
 					<div class="feature-card prize-card">
 						<i class="fas fa-trophy feature-icon"></i>
-						<h3 class="feature-title lang-content" id="offerDetails">
-							1st Place
-						</h3>
+						<h3 class="feature-title lang-content" id="offerDetails"></h3>
 
 						<p
 							class="prize-sub-description lang-content"
 							id="offerDetailsDesc"
 						></p>
 					</div>
-					<!-- 2nd Prize -->
-					<div class="feature-card prize-card">
-						<i class="fas fa-medal feature-icon"></i>
-						<h3 class="feature-title lang-content" id="prize2ndPlace">
-							2nd Place
-						</h3>
-
-						<p
-							class="prize-sub-description lang-content"
-							id="prize2details"
-						></p>
-					</div>
-					<!-- 3rd Prize -->
-					<div class="feature-card prize-card">
-						<i class="fas fa-award feature-icon"></i>
-						<h3 class="feature-title lang-content" id="prize3rdPlace">
-							3rd Place
-						</h3>
-
-						<p
-							class="prize-sub-description lang-content"
-							id="prize3details"
-						></p>
-					</div>
 				</div>
 
-				<!-- How to Participate & Eligibility -->
+				<!-- How it Works & Eligibility -->
 				<div class="feature-grid">
-					<div class="feature-card">
-						<i class="fas fa-bullseye feature-icon"></i>
-						<h3 class="feature-title lang-content" id="howToTitle">
-							How to Participate
-						</h3>
-						<p
-							class="feature-description lang-content"
-							id="howToDesc"
-						></p>
-					</div>
-
 					<div class="feature-card">
 						<i class="fas fa-user-check feature-icon"></i>
 						<h3 class="feature-title lang-content" id="eligibilityTitle">
@@ -911,6 +938,16 @@
 						<p
 							class="feature-description lang-content"
 							id="eligibilityDesc"
+						></p>
+					</div>
+					<div class="feature-card">
+						<i class="fas fa-bullseye feature-icon"></i>
+						<h3 class="feature-title lang-content" id="howToTitle">
+							How it works
+						</h3>
+						<p
+							class="feature-description lang-content"
+							id="howToDesc"
 						></p>
 					</div>
 				</div>
@@ -1049,19 +1086,14 @@
 					detailsTitle: 'Campaign Details',
 					offerDetails: 'Offer Details',
 					offerDetailsDesc:
-						'● Receive 5% bonus gold, up to BDT 3000 worth of gold, on every eligible transaction by using the promo code ‘GOLD3000’<br/> ● The equivalent gold amount (up to BDT 3,000) will be added to your Gold Kinen account.<br/> ● The offer applies to transactions of BDT 500 or above.<br/> ● There is no daily or per-transaction limit — only a total bonus cap of BDT 3,000 per user for the entire campaign.<br/> ● You are not receiving cash (taka); you are receiving bonus gold, which will be calculated based on the official market price of 22 karat gold on the purchase date.',
-					prize2ndPlace: '2nd Place',
-					prize2details:
-						'(2nd highest purchaser)<br>Singapore/Australian variant (e-SIM).',
-					prize3rdPlace: '3rd Place',
-					prize3details:
-						'(3rd highest purchaser)<br>Singapore/Australian variant (Dual SIM: e-SIM + Nano SIM).',
-					howToTitle: 'How to Participate',
+						'● Receive <strong>5% bonus gold, up to BDT 3000 worth of gold,</strong> on every eligible transaction by using the promo code <strong>‘GOLD3000’</strong><br/> ● The equivalent gold amount (up to <strong>BDT 3,000</strong>) will be <strong>added to your Gold Kinen account.</strong><br/> ● The offer applies to <strong>transactions of BDT 500 or above.</strong><br/> ● There is <strong>no daily or per-transaction limit</strong> — only a <strong>total bonus cap of BDT 3,000 per user</strong> for the entire campaign.<br/> ● You are <strong>not receiving cash (taka);</strong> you are receiving bonus gold, which will be calculated based on the <strong>official market price of 22 karat gold</strong> on the purchase date.',
+
+					howToTitle: 'How it works',
 					howToDesc:
-						'Buy gold on the Gold Kinen app from 1-31 October 2025.',
+						'● <strong>Bonus Gold = 5% of your transaction amount.</strong><br/> ● The bonus is calculated based on your eligible transactions throughout the campaign period.<br/> ● <strong>Maximum bonus per user:</strong> BDT 3,000 worth of bonus gold.<br/><br/><table class="bonus-table"><thead><tr><th>Purchase Amount</th><th>Bonus Gold</th><th>Notes</th></tr></thead><tbody><tr><td class="amount">BDT 1,000</td><td class="bonus">BDT 50 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 10,000</td><td class="bonus">BDT 500 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 60,000</td><td class="bonus">BDT 3000 worth of gold</td><td class="notes">Bonus limit reached</td></tr><tr><td class="amount">BDT 100,000</td><td class="bonus">BDT 3,000 worth of gold</td><td class="notes">Bonus limit reached</td></tr></tbody></table>',
 					eligibilityTitle: 'Eligibility',
 					eligibilityDesc:
-						'All successful gold purchases made through the Gold Kinen app will be considered eligible. This includes purchases made using the ‘Buy Gold’ option as well as the ‘Auto Gold Save’ plan. Winners will be determined by the highest gold purchase volume (in grams) within the campaign period, 1-31 October 2025.',
+						'● Open to <strong>all Gold Kinen users,</strong> both new and existing.<br /> ● Minimum transaction amount: <strong>BDT 500.</strong><br/> ● Valid only for <strong>purchases made through the Gold Kinen app using online payment methods.</strong>',
 					winnerSelectionTitle: 'Selection of Winners',
 					winnerSelectionDesc: `<ul>
                                         <li>During the campaign period 1-31 October 2025, the top 3 highest gold purchasing customers will be selected for the prize(s), based on the total amount of gold purchased (in grams) by the customer. This can be a single purchase by the customer or the combined amount of multiple purchases during the campaign.</li>
@@ -1179,15 +1211,10 @@
 
 					offerDetailsDesc:
 						'(সর্বোচ্চ পরিমাণ গোল্ড ক্রয়কারী গ্রাহক)<br>Singapore/Australian variant (Dual SIM: e-SIM + Nano SIM).',
-					prize2ndPlace: '২য় স্থান',
-					prize2details:
-						'(দ্বিতীয় সর্বোচ্চ পরিমাণ গোল্ড ক্রয়কারী গ্রাহক)<br>Singapore/Australian variant (e-SIM).',
-					prize3rdPlace: '৩য় স্থান',
-					prize3details:
-						'(তৃতীয় সর্বোচ্চ পরিমাণ গোল্ড ক্রয়কারী গ্রাহক)<br>Singapore/Australian variant (Dual SIM: e-SIM + Nano SIM).',
+
 					howToTitle: 'কীভাবে অংশ নেবেন',
 					howToDesc:
-						'১-৩১ অক্টোবর ২০২৫ তারিখের মধ্যে গোল্ড কিনেন অ্যাপে গোল্ড ক্রয় করুন। ক্যাম্পেইন সময়সীমার মধ্যে নিয়মিত গোল্ড ক্রয়ের মাধ্যমে, গ্রাম অনুযায়ী, সর্বোচ্চ পরিমাণ গোল্ড ক্রয়কারী ৩ জন গ্রাহক বিজয়ী নির্বাচিত হবেন।',
+						'● <strong>বোনাস গোল্ড = আপনার লেনদেনের পরিমাণের ৫%।</strong><br/> ● বোনাস ক্যাম্পেইন পিরিয়ডে আপনার যোগ্য লেনদেনের উপর ভিত্তি করে গণনা করা হয়।<br/> ● <strong>প্রতি ব্যবহারকারীর জন্য সর্বোচ্চ বোনাস:</strong> BDT ৩,০০০ মূল্যের বোনাস গোল্ড।<br/><br/><table class="bonus-table"><thead><tr><th>ক্রয়ের পরিমাণ</th><th>বোনাস গোল্ড</th><th>নোট</th></tr></thead><tbody><tr><td class="amount">BDT ৫০০</td><td class="bonus">BDT ২৫ মূল্যের গোল্ড</td><td class="notes">ন্যূনতম লেনদেনের পরিমাণ</td></tr><tr><td class="amount">BDT ১,০০০</td><td class="bonus">BDT ৫০ মূল্যের গোল্ড</td><td class="notes">স্ট্যান্ডার্ড বোনাস</td></tr><tr><td class="amount">BDT ৫,০০০</td><td class="bonus">BDT ২৫০ মূল্যের গোল্ড</td><td class="notes">৫% বোনাস প্রযোজ্য</td></tr><tr><td class="amount">BDT ১০,০০০</td><td class="bonus">BDT ৫০০ মূল্যের গোল্ড</td><td class="notes">ক্রয়ের সাথে বোনাস বৃদ্ধি</td></tr><tr><td class="amount">BDT ৬০,০০০</td><td class="bonus">BDT ৩,০০০০ মূল্যের গোল্ড</td><td class="notes">সর্বোচ্চ বোনাস সীমা পৌঁছেছে</td></tr></tbody></table>',
 					eligibilityTitle: 'যোগ্যতা',
 					eligibilityDesc:
 						'গোল্ড কিনেন অ্যাপের মাধ্যমে সম্পন্নকৃত সকল সফল গোল্ড ক্রয়কে যোগ্য বিবেচনা করা হবে। অর্থাৎ অ্যাপের ‘গোল্ড ক্রয়’ অপশন এবং ‘অটো গোল্ড সেভ’ প্ল্যানে অন্তর্ভুক্ত সকল ক্রয়কে যোগ্য বিবেচনা করা হবে। ক্যাম্পেইন সময়সীমার মধ্যে (১-৩১ অক্টোবর ২০২৫ পর্যন্ত) সর্বোচ্চ গোল্ড ক্রয়ের পরিমাণ (গ্রাম) অনুযায়ী বিজয়ী নির্ধারণ করা হবে।',
@@ -1354,14 +1381,6 @@
 
 				document.getElementById('offerDetailsDesc').innerHTML =
 					lang.offerDetailsDesc;
-				document.getElementById('prize2ndPlace').textContent =
-					lang.prize2ndPlace;
-				document.getElementById('prize2details').innerHTML =
-					lang.prize2details;
-				document.getElementById('prize3rdPlace').textContent =
-					lang.prize3rdPlace;
-				document.getElementById('prize3details').innerHTML =
-					lang.prize3details;
 				document.getElementById('howToTitle').textContent = lang.howToTitle;
 				document.getElementById('howToDesc').innerHTML = lang.howToDesc;
 				document.getElementById('eligibilityTitle').textContent =
