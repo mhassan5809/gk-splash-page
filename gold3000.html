@@ -623,6 +623,55 @@
 				color: var(--primary-navy);
 			}
 
+			/* Sticky Call Button Styles */
+			.call-button {
+				position: fixed;
+				bottom: 90px;
+				right: 25px;
+				width: 60px;
+				height: 60px;
+				background: var(--gradient-gold);
+				border-radius: 50%;
+				border: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+				cursor: pointer;
+				z-index: 1000;
+				transition: all 0.3s ease;
+				text-decoration: none; 
+			}
+
+			.call-button:hover {
+				transform: scale(1.05) translateY(-3px);
+				box-shadow: 0 12px 25px rgba(40, 167, 69, 0.4);
+				background: #218838;
+				color: white;
+				text-decoration: none;
+			}
+
+			.call-button i {
+				font-size: 18px;
+				animation: ring 2s infinite;
+			}
+
+			.call-number {
+				white-space: nowrap;
+			}
+
+			@keyframes ring {
+				0%, 90%, 100% {
+					transform: rotate(0deg);
+				}
+				10%, 30%, 50%, 70% {
+					transform: rotate(-10deg);
+				}
+				20%, 40%, 60%, 80% {
+					transform: rotate(10deg);
+				}
+			}
+
 			.sticky-container {
 				position: fixed;
 				bottom: 20px;
@@ -672,6 +721,17 @@
 
 				.download-button img {
 					height: 30px;
+				}
+
+				.call-button {
+					bottom: 80px;
+					right: 15px;
+					padding: 12px 16px;
+					font-size: 13px;
+				}
+
+				.call-button i {
+					font-size: 16px;
 				}
 			}
 			/* --- END: Floating Action Button Styles --- */
@@ -788,6 +848,17 @@
 					height: 55px;
 					bottom: 20px;
 					right: 20px;
+				}
+
+				.call-button {
+					bottom: 80px;
+					right: 15px;
+					padding: 12px 16px;
+					font-size: 13px;
+				}
+
+				.call-button i {
+					font-size: 16px;
 				}
 			}
 
@@ -1062,6 +1133,11 @@
 		<!-- Floating Action Button HTML -->
 		<a id="contact-fab" class="contact-fab" href="#">
 			<i id="fab-icon" class="fab-icon"></i>
+		</a>
+
+		<!-- Sticky Call Button -->
+		<a href="tel:+8809610964653" class="call-button" id="callButton">
+			<i class="fas fa-phone"></i>
 		</a>
 
 		<div class="sticky-container">
