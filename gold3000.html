@@ -303,6 +303,7 @@
 				margin-bottom: 2rem;
 				display: flex;
 				align-items: center;
+				font-size: 1.1rem;
 			}
 
 			.eligibility-desc {
@@ -901,6 +902,7 @@
 				overflow: hidden;
 				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 				border: 1px solid var(--border-color);
+				margin-top: 10px;
 			}
 
 			.extra-table th {
@@ -936,7 +938,7 @@
 
 			.extra-table .extra {
 				font-weight: 600;
-				color: #28a745;
+				color: gray;
 			}
 
 			.extra-table .notes {
@@ -1010,7 +1012,7 @@
 		<section class="content-section">
 			<div class="container">
 				<h2 class="section-title lang-content" id="offerTitle"></h2>
-				<p class="section-subtitle lang-content" id="offerSubtitle"></p>
+				<div class="info-block" id="offerSubtitle"></div>
 
 				<!-- Prize Section -->
 				<h2 class="section-title lang-content" id="detailsTitle"></h2>
@@ -1170,23 +1172,23 @@
 					langText: 'বাংলা',
 					offerTitle: 'Celebration Gold Offer',
 					offerSubtitle: `Celebrate this festive season with extra gold!<br>
-                    From <strong>20 November to 31 December 2025</strong>, enjoy <strong>5% extra gold</strong> on your gold purchase when you apply the promo code <strong>'GOLD3000'</strong> in the <strong>Gold Kinen app</strong>.<br><br> You can receive up to <strong>BDT 3,000 worth of extra gold</strong> during the campaign period, so the more you save, the more gold you gain!`,
+                    From 20 November to 31 December 2025, enjoy 5% extra gold on your gold purchase when you apply the promo code 'GOLD3000' in the Gold Kinen app.<br> You can receive up to BDT 3,000 worth of extra gold during the campaign period, so the more you save, the more gold you gain!`,
 					detailsTitle: 'Campaign Details',
 					offerDetails: 'Offer Details',
 					offerDetailsDesc:
-						'● Receive <strong>5% extra gold, up to BDT 3000 worth of gold,</strong> on every eligible transaction by using the promo code <strong>‘GOLD3000’</strong><br/> ● The equivalent gold amount (up to <strong>BDT 3,000</strong>) will be <strong>added to your Gold Kinen account.</strong><br/> ● The offer applies to <strong>transactions of BDT 500 or above.</strong><br/> ● There is <strong>no daily or per-transaction limit</strong> — only a <strong>total limit of BDT 3,000 per user</strong> for the entire campaign.<br/> ● You are <strong>not receiving cash;</strong> you are receiving extra gold, which will be calculated based on the <strong>official market price of 22 karat gold</strong> on the purchase date.',
+						'● Receive 5% extra gold, up to BDT 3000 worth of gold, on every eligible transaction by using the promo code ‘GOLD3000’<br/> ● The equivalent gold amount (up to BDT 3,000) will be added to your Gold Kinen account.<br/> ● The offer applies to transactions of BDT 500 or above.<br/> ● There is no daily or per-transaction limit — only a total limit of BDT 3,000 per user for the entire campaign.<br/> ● You are not receiving cash; you are receiving extra gold, which will be calculated based on the official market price of 22 karat gold on the purchase date.',
 
 					howToTitle: 'How it works',
 					howToDesc:
-						'● <strong>Extra Gold = 5% of your transaction amount.</strong><br/> ● The extra gold is calculated based on your eligible transactions throughout the campaign period.<br/> ● <strong>Maximum extra gold per user:</strong> BDT 3,000 worth of extra gold.<br/><br/><table class="extra-table"><thead><tr><th>Purchase Amount</th><th>5% Extra Gold</th><th>Extra Gold Limit</th></tr></thead><tbody><tr><td class="amount">BDT 1,000</td><td class="extra">BDT 50 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 10,000</td><td class="extra">BDT 500 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 60,000</td><td class="extra">BDT 3000 worth of gold</td><td class="notes">Limit reached</td></tr><tr><td class="amount">BDT 100,000</td><td class="extra">BDT 3,000 worth of gold</td><td class="notes">Limit reached</td></tr></tbody></table>',
+						'● Extra Gold = 5% of your transaction amount.<br/> ● The extra gold is calculated based on your eligible transactions throughout the campaign period.<br/> ● Maximum extra gold per user: BDT 3,000 worth of extra gold.<br/><br/>Example of calculations:<br/><table class="extra-table"><thead><tr><th>Purchase Amount</th><th>5% Extra Gold</th><th>Extra Gold Limit</th></tr></thead><tbody><tr><td class="amount">BDT 1,000</td><td class="extra">BDT 50 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 10,000</td><td class="extra">BDT 500 worth of gold</td><td class="notes">---</td></tr><tr><td class="amount">BDT 60,000</td><td class="extra">BDT 3000 worth of gold</td><td class="notes">Limit reached</td></tr><tr><td class="amount">BDT 100,000</td><td class="extra">BDT 3,000 worth of gold</td><td class="notes">Limit reached</td></tr></tbody></table>',
 					eligibilityTitle: 'Eligibility',
 					eligibilityDesc:
-						'● Open to <strong>all Gold Kinen users,</strong> both new and existing.<br /> ● Minimum transaction amount: <strong>BDT 500.</strong><br/> ● Valid only for <strong>purchases made through the Gold Kinen app using online payment methods.</strong>',
-					notificationTitle: 'Extra Gold Credit Timeline',
+						'● Open to all Gold Kinen users, both new and existing.<br /> ● Minimum transaction amount: BDT 500.<br/> ● Valid only for purchases made through the Gold Kinen app using online payment methods.',
+					notificationTitle: 'How Fast Will I Get the Gold?',
 					notificationDesc:
-						'• Your extra gold will be added to your <strong>Gold Kinen account instantly</strong> after each successful purchase.',
+						'• Your extra gold will be added to your Gold Kinen account instantly after each successful purchase.',
 					additionalInfoTitle: 'Collect or Sell Anytime',
-					additionalInfoDesc: `All the gold you buy — including your extra gold — can be collected or sold anytime through the Gold Kinen app. You can collect your stored gold in the form of hallmarked and certified 0.5g, 1g, 5g, 10g gold bars or 2g, 4g gold coins.`,
+					additionalInfoDesc: `All the gold you buy — including your extra gold — can be collected or sold anytime through the Gold Kinen app. You can collect your stored gold in the form of hallmarked and certified 0.5g, 1g, 5g, 10g gold bars or 2g, 4g gold coins via home delivery in Dhaka metropolitan areas or through 650+ pick-up points nationwide.`,
 					howItWorksTitle: 'How to Buy Gold',
 					termsTitle: 'Terms & Conditions',
 					faqTitle: 'Frequently Asked Questions',
@@ -1239,7 +1241,7 @@
 							question:
 								'Can I collect or sell my gold during the campaign?',
 							answer:
-								'Yes, you can collect your gold anytime as hallmarked and certified 0.5g, 1g, 5g, 10g gold bars, and 2g, 4g gold coins. You can also sell your gold anytime and receive the equivalent cash amount in your bank or bKash account, during the campaign period.',
+								'Yes, you can collect your gold anytime as 22 karat hallmarked and certified 0.5g, 1g, 5g, 10g gold bars, and 2g, 4g gold coins. You can also sell your gold anytime and receive the equivalent cash amount in your bank or bKash account, during the campaign period.',
 						},
 						{
 							question:
@@ -1264,8 +1266,8 @@
 						'<strong>Eligibility:</strong><br>• The campaign is open to all new and existing Gold Kinen users.<br>• Only purchases made through the Gold Kinen app using online payment methods are eligible.<br>• Minimum eligible transaction value is BDT 500 per purchase.',
 						"<strong>Promo Code:</strong><br>• The promo code 'GOLD3000' must be applied at checkout to avail the extra gold.<br>• Only one promo code can be used per transaction.",
 						'<strong>Celebration Gold Offer:</strong><br>• Eligible transactions will receive 5% extra gold based on the official market price of 22 karat gold on the purchase date.<br>• The total extra gold added to a user’s account during the campaign will be a maximum of BDT 3,000.<br>• There is no daily or per-transaction limit; the limit applies cumulatively over the campaign period.',
-						'<strong>Extra Gold Credit:</strong><br>• Extra gold will be added to the user’s Gold Kinen account instantly after each successful transaction.',
-						'<strong>Gold Collection and Redemption:</strong><br>• Users may collect their gold as 0.5g, 1g, 5g, 10g gold bars or 2g, 4g gold coins.<br>• Users may also sell their gold at any time through the app and receive the equivalent cash in their bank or bKash account, including the extra gold added.',
+						'<strong>How Fast Will I Get the Gold?:</strong><br>• Extra gold will be added to the user’s Gold Kinen account instantly after each successful transaction.',
+						'<strong>Gold Collection and Redemption:</strong><br>• Users may collect their gold as 22 karat hallmarked and certified 0.5g, 1g, 5g, 10g gold bars or 2g, 4g gold coins via home delivery in Dhaka metropolitan areas or through 650+ pick-up points nationwide.<br>• Users may also sell their gold at any time through the app and receive the equivalent cash in their bank or bKash account, including the extra gold added.',
 						'<strong>Extra Gold Nature:</strong><br>• The extra gold will be provided in gold only. No cash equivalent will be given.',
 						"<strong>Modification and Termination:</strong><br>• Gold Kinen reserves the right to amend the campaign at any time without prior notice.<br>• Any disputes arising from the campaign will be resolved at Gold Kinen's discretion.",
 						'<strong>General:</strong><br>• Due to decimal conversions and arithmetical calculations the amount of gold may vary by a difference of BDT 1.<br> • By participating in the campaign, users agree to abide by these Terms & Conditions.<br>• These Terms & Conditions are in addition to the Gold Kinen standard user agreement and any applicable laws.',
@@ -1275,23 +1277,23 @@
 					langText: 'English',
 					offerTitle: 'সেলিব্রেশন গোল্ড অফার',
 					offerSubtitle:
-						'এই উৎসবের মৌসুমে আপনার গোল্ড সেভিংস হোক আরও সমৃদ্ধ!<br/> <strong>২০ নভেম্বর থেকে ৩১ ডিসেম্বর ২০২৫</strong> পর্যন্ত <strong>গোল্ড কিনেন অ্যাপ</strong> থেকে গোল্ড ক্রয়ে <strong>‘GOLD3000’</strong> প্রোমো কোড ব্যবহার করলে পাবেন <strong>৫% extra গোল্ড।</strong><br/><br/> পুরো ক্যাম্পেইন চলাকালীন একজন গ্রাহক সর্বোচ্চ <strong>৩,০০০ টাকা সমমূল্যের extra গোল্ড</strong> পেতে পারবেন, সুতরাং যত বেশি ক্রয়, তত বেশি extra গোল্ড!',
+						'এই উৎসবের মৌসুমে আপনার গোল্ড সেভিংস হোক আরও সমৃদ্ধ!<br/> ২০ নভেম্বর থেকে ৩১ ডিসেম্বর ২০২৫ পর্যন্ত গোল্ড কিনেন অ্যাপ থেকে গোল্ড ক্রয়ে ‘GOLD3000’ প্রোমো কোড ব্যবহার করলে পাবেন ৫% extra গোল্ড।<br/>পুরো ক্যাম্পেইন চলাকালীন একজন গ্রাহক সর্বোচ্চ ৩,০০০ টাকা সমমূল্যের extra গোল্ড পেতে পারবেন, সুতরাং যত বেশি ক্রয়, তত বেশি extra গোল্ড!',
 					detailsTitle: 'অফার বিস্তারিত',
 					offerDetails: 'অফারের বিস্তারিত',
 					offerDetailsDesc:
-						'● অ্যাপে গোল্ড ক্রয় করার সময় <strong>‘GOLD3000’</strong> প্রোমো কোড ব্যবহার করলে প্রতিটি ট্রানজ্যাকশনে গ্রাহক পাবেন <strong>৫% extra গোল্ড,</strong> সর্বোচ্চ <strong>৳৩,০০০ সমমূল্যের গোল্ড</strong> আপনার <strong>গোল্ড কিনেন অ্যাকাউন্টে যুক্ত হবে।</strong><br/> ● অফারটি সর্বনিম্ন <strong>৳৫০০ বা তার বেশি</strong> গোল্ড ক্রয়ের ক্ষেত্রে প্রযোজ্য।<br/> ● কোনো দৈনিক বা প্রতি ট্রানজ্যাকশন সীমা নেই — শুধুমাত্র <strong>পুরো ক্যাম্পেইন জুড়ে একজন গ্রাহক সর্বোচ্চ ৳৩,০০০ সমপরিমাণের গোল্ড</strong> উপভোগ করতে পারবেন।<br>● উক্ত ক্যাম্পেইনে গ্রাহক, তার ক্রয়ের পরিপ্রেক্ষিতে <strong>টাকা নয়, extra গোল্ড পাচ্ছেন</strong> — যা গ্রাহকের ক্রয়ের দিনের <strong>২২ ক্যারেট গোল্ডের অফিসিয়াল মার্কেট প্রাইস অনুযায়ী</strong> গণনা করা হবে।',
+						'● অ্যাপে গোল্ড ক্রয় করার সময় ‘GOLD3000’ প্রোমো কোড ব্যবহার করলে প্রতিটি ট্রানজ্যাকশনে গ্রাহক পাবেন ৫% extra গোল্ড, সর্বোচ্চ ৳৩,০০০ সমমূল্যের গোল্ড আপনার গোল্ড কিনেন অ্যাকাউন্টে যুক্ত হবে।<br/> ● অফারটি সর্বনিম্ন ৳৫০০ বা তার বেশি গোল্ড ক্রয়ের ক্ষেত্রে প্রযোজ্য।<br/> ● কোনো দৈনিক বা প্রতি ট্রানজ্যাকশন সীমা নেই — শুধুমাত্র পুরো ক্যাম্পেইন জুড়ে একজন গ্রাহক সর্বোচ্চ ৳৩,০০০ সমপরিমাণের গোল্ড উপভোগ করতে পারবেন।<br>● উক্ত ক্যাম্পেইনে গ্রাহক, তার ক্রয়ের পরিপ্রেক্ষিতে টাকা নয়, extra গোল্ড পাচ্ছেন — যা গ্রাহকের ক্রয়ের দিনের ২২ ক্যারেট গোল্ডের অফিসিয়াল মার্কেট প্রাইস অনুযায়ী গণনা করা হবে।',
 
 					howToTitle: 'অফার কিভাবে কাজ করে',
 					howToDesc:
-						'● <strong>Extra গোল্ড = আপনার ক্রয়কৃত পরিমাণের ৫%।</strong><br/> ● ক্যাম্পেইন চলাকালীন আপনার সকল ক্রয়ের অনুযায়ী extra গোল্ড গণনা করা হবে।<br/> ● <strong>প্রতি গ্রাহকের প্রাপনীয় সর্বোচ্চ গোল্ড: ৳৩,০০০ সমমূল্যের extra গোল্ড।</strong><br/><br/><table class="extra-table"><thead><tr><th>ক্রয়ের পরিমাণ</th><th>৫% Extra গোল্ড</th><th>Extra গোল্ড লিমিট</th></tr></thead><tbody><tr><td class="amount">৳১,০০০</td><td class="extra">৳৫০</td><td class="notes">---</td></tr><tr><td class="amount">৳১০,০০০</td><td class="extra">৳৫০০</td><td class="notes">---</td></tr><tr><td class="amount">৳৬০,০০০</td><td class="extra">৳৩০০০</td><td class="notes">সর্বোচ্চ সীমা পূর্ণ</td></tr><tr><td class="amount">৳১,০০,০০০</td><td class="extra">৳৩,০০০</td><td class="notes">সর্বোচ্চ সীমা পূর্ণ</td></tr></tbody></table>',
+						'● Extra গোল্ড = আপনার ক্রয়কৃত পরিমাণের ৫%।<br/> ● ক্যাম্পেইন চলাকালীন আপনার সকল ক্রয়ের অনুযায়ী extra গোল্ড গণনা করা হবে।<br/> ● প্রতি গ্রাহকের প্রাপনীয় সর্বোচ্চ গোল্ড: ৳৩,০০০ সমমূল্যের extra গোল্ড।<br/><br/>হিসাবের উদাহরণ-<table class="extra-table"><thead><tr><th>ক্রয়ের পরিমাণ</th><th>৫% Extra গোল্ড</th><th>Extra গোল্ড লিমিট</th></tr></thead><tbody><tr><td class="amount">৳১,০০০</td><td class="extra">৳৫০</td><td class="notes">---</td></tr><tr><td class="amount">৳১০,০০০</td><td class="extra">৳৫০০</td><td class="notes">---</td></tr><tr><td class="amount">৳৬০,০০০</td><td class="extra">৳৩০০০</td><td class="notes">সর্বোচ্চ সীমা পূর্ণ</td></tr><tr><td class="amount">৳১,০০,০০০</td><td class="extra">৳৩,০০০</td><td class="notes">সর্বোচ্চ সীমা পূর্ণ</td></tr></tbody></table>',
 					eligibilityTitle: 'যোগ্যতা',
 					eligibilityDesc:
-						'● <strong>সকল নতুন ও পুরনো গোল্ড কিনেন  গ্রাহকদের জন্য প্রযোজ্য।</strong><br /> ● সর্বনিম্ন ক্রয়ের পরিমাণ: <strong>৳৫০০</strong><br/> ● অফারটি শুধুমাত্র <strong>গোল্ড কিনেন  অ্যাপ থেকে অনলাইন পেমেন্টের মাধ্যমে গোল্ড ক্রয়ের ক্ষেত্রে প্রযোজ্য।</strong>',
-					notificationTitle: 'Extra গোল্ড যুক্ত হওয়ার সময়কাল',
+						'● সকল নতুন ও পুরনো গোল্ড কিনেন  গ্রাহকদের জন্য প্রযোজ্য।<br /> ● সর্বনিম্ন ক্রয়ের পরিমাণ: ৳৫০০<br/> ● অফারটি শুধুমাত্র গোল্ড কিনেন  অ্যাপ থেকে অনলাইন পেমেন্টের মাধ্যমে গোল্ড ক্রয়ের ক্ষেত্রে প্রযোজ্য।',
+					notificationTitle: 'Extra গোল্ড পাওয়ার সময়সীমা কত?',
 					notificationDesc:
 						'• ক্রয় সম্পন্ন হওয়ার পর তাৎক্ষণিকভাবে আপনার extra গোল্ড আপনার গোল্ড কিনেন অ্যাকাউন্টে যোগ হবে।',
 					additionalInfoTitle: 'যেকোনো সময় গোল্ড উত্তোলন বা বিক্রয় করুন',
-					additionalInfoDesc: `ক্যাম্পেইন চলাকালীন সময়েও, যেকোনো সময় আপনার ক্রয়কৃত ও সঞ্চিত গোল্ড, <strong>গোল্ড কিনেন অ্যাপে উপলব্ধ  হলমার্ক এবং প্রত্যয়িত ০.৫ গ্রাম, ১ গ্রাম, ৫ গ্রাম, ১০ গ্রাম গোল্ড বার এবং ২ গ্রাম, ৪ গ্রাম গোল্ড কয়েন</strong> আকারে উত্তোলন করতে পারবেন অথবা যেকোনো সময়ে যেকোনো পরিমাণে গোল্ড বিক্রয় করে তার সমপরিমাণ ক্যাশ ব্যাংক বা বিকাশ অ্যাকাউন্টে রিসিভ করতে পারবেন। `,
+					additionalInfoDesc: `ক্যাম্পেইন চলাকালীন সময়েও, যেকোনো সময় আপনার ক্রয়কৃত ও সঞ্চিত গোল্ড, গোল্ড কিনেন অ্যাপে উপলব্ধ হলমার্ক এবং প্রত্যয়িত ০.৫ গ্রাম, ১ গ্রাম, ৫ গ্রাম, ১০ গ্রাম গোল্ড বার এবং ২ গ্রাম, ৪ গ্রাম গোল্ড কয়েন আকারে উত্তোলন করতে পারবেন ঢাকা সিটি কর্পোরেশন আওতাভুক্ত এলাকায় হোম ডেলিভারির মাধ্যমে বা সারাদেশে ৬৫০+ পিক-আপ পয়েন্ট থেকে অথবা যেকোনো সময়ে যেকোনো পরিমাণে গোল্ড বিক্রয় করে তার সমপরিমাণ ক্যাশ ব্যাংক বা বিকাশ অ্যাকাউন্টে রিসিভ করতে পারবেন।`,
 					howItWorksTitle: 'কিভাবে গোল্ড ক্রয় করবেন',
 					termsTitle: 'শর্তাবলী',
 					faqTitle: 'সাধারণ জিজ্ঞাসা',
@@ -1343,7 +1345,7 @@
 							question:
 								'ক্যাম্পেইন চলাকালে আমি কি আমার গোল্ড উত্তোলন বা বিক্রয় করতে পারব?',
 							answer:
-								'অবশ্যই পারবেন! আপনি যেকোনো সময় আপনার অ্যাপে সঞ্চিত গোল্ড, হলমার্ক সার্টিফাইড ০.৫ গ্রাম, ১ গ্রাম, ৫ গ্রাম, ১০ গ্রাম গোল্ড বার এবং ২ গ্রাম, ৪ গ্রাম গোল্ড কয়েন আকারে উত্তোলন করতে পারবেন। এছাড়াও, ক্যাম্পেইন চলাকালীন যেকোনো সময় আপনার অ্যাপে সঞ্চিত গোল্ড বিক্রি করে ব্যাংক বা বিকাশ অ্যাকাউন্টে সমমূল্যের টাকা রিফান্ড নিতে পারবেন।',
+								'অবশ্যই পারবেন! আপনি যেকোনো সময় আপনার অ্যাপে সঞ্চিত গোল্ড, হলমার্ক সার্টিফাইড ০.৫ গ্রাম, ১ গ্রাম, ৫ গ্রাম, ১০ গ্রাম গোল্ড বার এবং ২ গ্রাম, ৪ গ্রাম গোল্ড কয়েন আকারে উত্তোলন করতে পারবেন ঢাকা সিটি কর্পোরেশন আওতাভুক্ত এলাকায় হোম ডেলিভারির মাধ্যমে বা সারাদেশে ৬৫০+ পিক-আপ পয়েন্ট থেকে। এছাড়াও, ক্যাম্পেইন চলাকালীন যেকোনো সময় আপনার অ্যাপে সঞ্চিত গোল্ড বিক্রি করে ব্যাংক বা বিকাশ অ্যাকাউন্টে সমমূল্যের টাকা রিফান্ড নিতে পারবেন।',
 						},
 						{
 							question:
